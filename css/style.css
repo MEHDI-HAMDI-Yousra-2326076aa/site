@@ -283,3 +283,6 @@ h4{
     backdrop-filter: blur(2px);
     border: 1px solid black;
 }
+#contact{
+    font-family: "Agency FB";
+}
