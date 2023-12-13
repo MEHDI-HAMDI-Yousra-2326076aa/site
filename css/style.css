@@ -274,6 +274,12 @@ h4{
  justify-content: center;
 }
 #contact{
+    font-size: 1.5em;
     display: flex;
     flex-direction: column;
+    margin-top: 10em;
+    margin-bottom: 20em;
+    padding: 5em;
+    backdrop-filter: blur(2px);
+    border: 2px solid black;
 }
