@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="css/style.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pages d'Achats </title>
+
+</head>
+<body>
+    <form>
+
+
+        <h1> Order my beautiful ChessBoard ! </h1>
+
+        <label for = "ChessBoard"> Quel type d'échiquier ? </label> <br> <br>
+        <select
+        id="choix" name="échiquier">
+        <option value = "Electronique">Electronique </option>
+        <option value = "Bois">Bois </option>
+        <option value = "Classique"> Classique </option>
+        </select> <br> <br>
+
+   
+           
+            <label for="name"> Votre nom :</label> <br>
+            <input type = "text" placeholder="Saissisez votre nom" id="name"><br><br>
+            <label for = "mail"> Votre mail </label> <br>
+            <input type = "email" id="mail" placeholder="Saisissez votre mail"><br>
+
+             <input type = "submit" class="button" border-radius:5px onclick=afficherAlerte()>
+        </form>
+         <script>
+    // Fonction pour afficher une alerte lorsqu'on clique sur le bouton submit
+    function afficherAlerte() {
+        alert("Votre commande à bien été effectué");
+    }
+    </script>
+    
+</body>
+</html>
