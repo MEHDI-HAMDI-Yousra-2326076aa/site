@@ -277,3 +277,9 @@ h4{
     display: flex;
     flex-direction: column;
 }
+#contact h2{
+    font-size: 2em;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
