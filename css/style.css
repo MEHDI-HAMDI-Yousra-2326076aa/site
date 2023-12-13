@@ -281,8 +281,5 @@ h4{
     margin-bottom: 20em;
     padding: 5em;
     backdrop-filter: blur(2px);
-    border: 1px solid black;
-}
-#contact{
-    font-weight: bold;
+    border: 2px solid black;
 }
