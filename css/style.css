@@ -111,7 +111,6 @@ p{
     border-radius: 15px;
     padding: 0.3em
 }
-
 .menu li p {
     color: white;
     font-weight: bold;
@@ -185,6 +184,7 @@ p{
 #apprendre{
    display: flex;
    justify-content:space-around;
+   justify-content: space-around;
    flex-direction: column;
 }
 #titre h2{
@@ -273,16 +273,39 @@ h4{
  align-items: center;
  justify-content: center;
 }
+/* css page apprendre*/
+.contact h2{
+    padding: 1em;
+}
 #contact{
     font-size: 1.5em;
     display: flex;
     flex-direction: column;
-    margin-top: 10em;
-    margin-bottom: 20em;
+    margin-top: 5em;
+    margin-bottom: 2em;
     padding: 5em;
     backdrop-filter: blur(2px);
-    border: 9px solid black;
+    border: 3px solid black;
 }
 #photoCompétition{
     height: 300px;
 }
+.pied-contact{
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    justify-content: space-between;
+}
+.pied-contact h3{
+    color: darkslategrey;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 15px;
+}
+.pied-contact ul{
+  padding: 1em;
+}
+.pied-contact li{
+    padding: 0.5em;
+  }
