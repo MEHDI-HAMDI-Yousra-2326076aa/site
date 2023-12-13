@@ -19,14 +19,14 @@ html{
     padding: 1em;
     height: 1em;
     width: 1em;
-    cursor: pointer; 
+    cursor: pointer;
 }
 .theme{
     top:0;
   display: flex;
  justify-content: flex-start;
   margin-right: 0.5em;
-  height: 2em; 
+  height: 2em;
   width: 2em;
 }
 
@@ -53,7 +53,7 @@ footer {
 .stickers{
     display: flex;
     margin-top: 20%;
-    
+
 }
 .menu{
     font-size: 1.5em;
@@ -76,14 +76,14 @@ ul{
     border-radius: 4px;
 }
 #introduction {
-    padding: 10%;
+    padding-left: 30%;
+
     text-align: center;
     white-space: nowrap;
-    display: block;
     font-size: 200%;
     font-weight: 900;
-    color:beige
-    
+    color:beige;
+
 }
 #competition{
     padding: 25%;
@@ -93,7 +93,7 @@ ul{
 
     align-items: center;
     padding: 25px;
-     
+
 }
 .titrepartie{
     font-size:x-large;
@@ -137,7 +137,7 @@ p{
     flex-direction: row;
     justify-content: space-evenly;
 }
-main {
+#tuto main {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -184,7 +184,7 @@ main {
 }
 #apprendre{
    display: flex;
-   justify-self: space-around;
+   justify-content:space-around;
    flex-direction: column;
 }
 #titre h2{
@@ -282,4 +282,7 @@ h4{
     padding: 5em;
     backdrop-filter: blur(2px);
     border: 9px solid black;
+}
+#photoCompétition{
+    height: 300px;
 }
