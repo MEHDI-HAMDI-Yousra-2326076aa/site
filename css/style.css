@@ -33,7 +33,7 @@ html{
 h1 {
     font-size: 5em;
     color: whitesmoke;
-    text-shadow: 2px 2px black;
+    text-shadow: 4px 4px saddlebrown;
 }
 body {
     color: white;
@@ -63,6 +63,7 @@ footer {
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
+    padding: 5%;
 }
 a{
     color:darkslategray;
@@ -76,7 +77,7 @@ ul{
     border-radius: 4px;
 }
 #introduction {
-    padding-left: 30%;
+    padding-left: 60%;
 
     text-align: center;
     white-space: nowrap;
@@ -96,8 +97,8 @@ ul{
 
 }
 .titrepartie{
-    font-size:x-large;
-    color: darkseagreen;
+font-size: 2em;
+    color: saddlebrown;
 
 
 }
@@ -105,23 +106,23 @@ p{
     padding: 5%;
 }
 .menu li a {
-    color: cadetblue;
+    color: white;
     font-weight: bold;
-    background: white;
+    background: sandybrown;
     border-radius: 15px;
     padding: 0.3em
 }
 .menu li p {
     color: white;
     font-weight: bold;
-    background: darkslategrey;
+    background: sandybrown;
     border-radius: 15px;
     padding: 0.3em
 }
 
 .menu li a:hover {
     color: black;
-    background: cadetblue;
+    background: saddlebrown;
 }
 
 #reseaux a img {
@@ -146,8 +147,8 @@ p{
 }
 .evenements img{
     padding: 1em;
-   width: 10em;
-   height: auto;
+   width: 40em;
+   height: 20em;
 }
 .evenements li a{
  color: white;
@@ -173,19 +174,18 @@ p{
     height: 100%;
     gap: 1em;
 }
-.actual{
-    color:cadetblue;
+#actual{
+    color: white;
     font-weight: bold;
     text-decoration: none;
-    background: white;
+    background: saddlebrown;
     border-radius: 15px;
 
 }
 #apprendre{
    display: flex;
    justify-content:space-around;
-   justify-content: space-around;
-   flex-direction: column;
+    flex-direction: column;
 }
 #titre h2{
     display: flex;
@@ -258,7 +258,6 @@ h4{
 }
 .explications p{
  background-color: transparent;
- backdrop-filter: blur 10px;
  border: 1px solid white;
  display: flex;
  flex-direction: column;
@@ -332,7 +331,6 @@ h4{
 .contacts em{
     color: black;
     font-weight: bold;
-    font-style: none;
     font-size:0.5em ;
     margin: 1em 0;
 
