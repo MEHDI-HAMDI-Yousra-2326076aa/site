@@ -53,6 +53,9 @@ footer {
 .stickers{
     display: flex;
     margin-top: 20%;
+    background-color: white;
+    padding: 1em;
+    border-radius:2em;
     
 }
 .menu{
@@ -65,7 +68,7 @@ footer {
     align-items: center;
 }
 a{
-    color:darkslategray;
+    color:bisque;
 }
 a:hover{
     color: black;
@@ -97,7 +100,7 @@ ul{
 }
 .titrepartie{
     font-size:x-large;
-    color: darkseagreen;
+    color: wheat;
 
 
 }
@@ -105,23 +108,23 @@ p{
     padding: 5%;
 }
 .menu li a {
-    color: cadetblue;
+    color: black;
     font-weight: bold;
-    background: white;
+    background: whitesmoke;
     border-radius: 15px;
     padding: 0.3em
 }
 .menu li p {
     color: white;
     font-weight: bold;
-    background: darkslategrey;
+    background: burlywood;
     border-radius: 15px;
     padding: 0.3em
 }
 
 .menu li a:hover {
-    color: black;
-    background: cadetblue;
+    color: brown;
+    background: wheat;
 }
 
 #reseaux a img {
@@ -155,7 +158,7 @@ main {
  font-style: normal;
 }
 .evenements li a:hover{
-    color: darkslategray;
+    color: burlywood;
    }
 .evenements li{
     padding: 2em;
@@ -199,7 +202,7 @@ main {
    }
 #petit-texte{
     font-weight: bold;
-    color:darkslategray ;
+    color:brown ;
     width: 20em;
     border-radius: 15px;
     background-color: white;
@@ -219,28 +222,29 @@ h4{
     font-weight: bold;
     padding: 1em;
 }
-.liste li a::after{
-  position: absolute;
+.liste li a::after{ 
   bottom: -5px;
+  display: flex;
   right: 0;
   content: "";
   width: 0;
   height: 2px;
   border-radius: 6px;
-  background-color: black;
+  background-color: brown;
   transition: 0.5s;
 }
 .liste li a:hover::after{
     width: 100%;
 }
 .liste li a{
-    border: 1px solid black;
-    padding: 3px;
+    font-weight: bold;
+    padding: 0.3em;
+    border-radius: 1em;
     color: whitesmoke;
 }
 .liste li{
-   padding: 6px;
-   margin : 0 15px
+   padding: 0.5em;
+   margin : 0 1em;
 }
 .liste{
     display: flex;
@@ -257,7 +261,7 @@ h4{
 }
 .explications p{
  background-color: transparent;
- backdrop-filter: blur 10px;
+ backdrop-filter: blur(10px);
  border: 1px solid white;
  display: flex;
  flex-direction: column;
@@ -271,6 +275,7 @@ h4{
  display: flex;
  align-items: center;
  justify-content: center;
+ transform : translate(33em,0);
 }
 /* css page contact*/
 .contact h2{
@@ -298,6 +303,7 @@ h4{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .6s;
 }
 .plus{
     display: flex;
@@ -318,7 +324,7 @@ h4{
     border-radius: 15px;
     padding-left: 2em;
     padding-inline: 3em;
-    translate: -45px;
+    transform:translate(-45px,0);
 }
 .label{
     display: flex;
@@ -337,6 +343,7 @@ h4{
 
 }
 #envoyer{
+    cursor: pointer;
     display: flex;
     justify-self: flex-start;
     margin: auto;
@@ -345,7 +352,10 @@ h4{
     background-color: transparent;
     border-radius: 15px;
     padding: 0.5em;
-    font-size: 0.5em;
+    font-size: 0.7em;
+}
+#envoyer:hover{
+    transform: scale(.7);
 }
 .pied-contact{
     margin: 2em;
