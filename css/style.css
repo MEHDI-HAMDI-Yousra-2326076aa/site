@@ -129,7 +129,7 @@ p{
 #reseaux a img {
 
     height: 20em;
-    width: 20em
+    width: 20em;
     margin: 0.5em;
 }
 
@@ -402,4 +402,9 @@ h4{
 }
 .pied-contact P a:hover{
     color: black;
+}
+#photoCompétition{
+    width: 35%;
+    height: 35%;
+    border-radius: 15px;
 }
