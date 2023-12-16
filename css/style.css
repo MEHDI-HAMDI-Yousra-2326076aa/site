@@ -1,3 +1,6 @@
+p{
+    font-size: 3em;
+}
 * {
     font-family: "Candara Light";
     margin: 0;
@@ -80,12 +83,7 @@ ul{
     border-radius: 8px;
 }
 .introduction {
-    display: flex;
-    flex-direction: column;
-    white-space: nowrap;
-    display: block;
-    font-size: 200%;
-    font-weight: 900;
+    font-size: 5em;
     color:beige;
 
 }
@@ -100,8 +98,8 @@ ul{
      
 }
 .titrepartie{
-font-size: 2em;
-    color: saddlebrown;
+font-size: 10em;
+    color: sandybrown;
 
 
 }
@@ -129,8 +127,9 @@ p{
 }
 
 #reseaux a img {
-    width: 50px;
-    height: 50px;
+
+    height: 20em;
+    width: 20em
     margin: 0.5em;
 }
 
@@ -340,7 +339,6 @@ h4{
 .contacts em{
     color: black;
     font-weight: bold;
-    font-style: none;
     font-size:0.5em ;
     margin: 1em 0;
 
