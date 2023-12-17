@@ -9,7 +9,8 @@
 
 p{
     font-size: 3em;
-    color: black;
+    color: white;
+    text-shadow: black 0px 0px 5px;
 }
 
 #logo{
@@ -443,5 +444,11 @@ h4{
     height: 35%;
     border-radius: 15px;
 }
+section p:not(.introduction) {
 
+    border-radius: 15px;
+    background: rgba(0,0,0,0.1);
+    width: 50%;
+    margin: 0 auto;
+}
 
