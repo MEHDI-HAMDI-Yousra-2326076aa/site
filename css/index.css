@@ -66,6 +66,7 @@ footer {
 }
 .menu{
 
+
     font-size: 3em;
     height: 2em;
     margin-top: 0.5em;
@@ -211,5 +212,8 @@ section p:not(.introduction) {
     width: 50%;
     margin: 0 auto;
     font-weight: 900;
+}
+header{
+
 }
 
