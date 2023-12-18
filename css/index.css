@@ -38,10 +38,11 @@
 }
 
 h1 {
+    font-weight: 900;
     font-size: 15em;
     margin-top: 100px;
     color: whitesmoke;
-    text-shadow: 8px 8px saddlebrown;
+    text-shadow: 8px 8px darkslategrey;
 }
 body {
     color: white;
@@ -64,6 +65,7 @@ footer {
     border-radius:2em;
 
 }
+
 .menu{
 
 
@@ -76,18 +78,19 @@ footer {
     align-items: center;
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     z-index: 5000;
     width: 100%;
     margin: 0;
-    background: rgba(52,30 ,10,1);
+    background: darkslategrey;
+
 }
 .menu li a {
     color: white;
     font-weight: bold;
     border-radius: 15px;
-    padding: 0.3em
+    padding: 0.3em;
+    transition: 300ms ease-in-out;
 }
 .menu li p {
     color: white;
@@ -97,12 +100,15 @@ footer {
 }
 
 .menu li a:hover {
+    display: block;
     color: black;
-    background: saddlebrown;
+    background: lightseagreen;
+    transform: scale(1.1);
+
 }
 
 a{
-    color:saddlebrown;
+    color: darkslategrey;
 }
 a:hover{
     color: black;
@@ -131,7 +137,7 @@ ul{
 }
 .titrepartie{
     font-size: 10em;
-    color: saddlebrown;
+    color: darkslategrey;
     text-shadow: 4px 4px white;
 
 
@@ -196,7 +202,7 @@ p{
     color: white;
     font-weight: bold;
     text-decoration: none;
-    background: saddlebrown;
+    background: cadetblue;
     border-radius: 15px;
 
 }
@@ -215,5 +221,13 @@ section p:not(.introduction) {
 }
 header{
 
+}
+img{
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+h4{
+    font-weight: bold;
+    padding: 1em;
 }
 
