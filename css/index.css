@@ -1,26 +1,12 @@
-
-* {
-    font-family: "Candara Light";
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-}
-
-p{
-    font-size: 1.5em;
-    color: white;
-    text-shadow: black 0px 0px 5px;
-}
-
 #logo{
     animation: rotation 5s infinite linear;
     width: 5em;
     border-radius: 15px;
     margin: 10px 20px;
     position: fixed;
-    top: 100px;
+    top: 1px;
     left: 10px;
+    z-index: 5000;
 
 }
 @keyframes rotation {
@@ -32,16 +18,6 @@ p{
     }
 
 }
-
-html{
-    background-image: url("https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/PedroPinhata/php6wV0bn.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    height: 100%;
-}
-
 #theme{
     display: flex;
     justify-content: flex-start;
@@ -54,18 +30,19 @@ html{
 }
 .theme{
     top:0;
-  display: flex;
- justify-content: flex-start;
-  margin-right: 0.5em;
-  height: 2em;
-  width: 2em;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 0.5em;
+    height: 2em;
+    width: 2em;
 }
 
 h1 {
+    font-weight: 900;
     font-size: 15em;
     margin-top: 100px;
     color: whitesmoke;
-    text-shadow: 8px 8px saddlebrown;
+    text-shadow: 8px 8px darkslategrey;
 }
 body {
     color: white;
@@ -88,7 +65,9 @@ footer {
     border-radius:2em;
 
 }
+
 .menu{
+
 
     font-size: 3em;
     height: 2em;
@@ -99,18 +78,19 @@ footer {
     align-items: center;
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     z-index: 5000;
     width: 100%;
     margin: 0;
-    background: rgba(52,30 ,10,1);
+    background: darkslategrey;
+
 }
 .menu li a {
     color: white;
     font-weight: bold;
     border-radius: 15px;
-    padding: 0.3em
+    padding: 0.3em;
+    transition: 300ms ease-in-out;
 }
 .menu li p {
     color: white;
@@ -120,12 +100,15 @@ footer {
 }
 
 .menu li a:hover {
+    display: block;
     color: black;
-    background: saddlebrown;
+    background: lightseagreen;
+    transform: scale(1.1);
+
 }
 
 a{
-    color:saddlebrown;
+    color: darkslategrey;
 }
 a:hover{
     color: black;
@@ -139,7 +122,7 @@ ul{
 {
     font-size: 5em;
     color: white;
-font-weight: 900;
+    font-weight: 900;
     text-shadow: black 0px 0px 50px;
 }
 #competition{
@@ -153,8 +136,8 @@ font-weight: 900;
 
 }
 .titrepartie{
-font-size: 10em;
-    color: saddlebrown;
+    font-size: 10em;
+    color: darkslategrey;
     text-shadow: 4px 4px white;
 
 
@@ -176,6 +159,53 @@ p{
     flex-direction: row;
     justify-content: space-evenly;
 }
+#tuto main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+.evenements li a{
+    color: white;
+    font-weight: bold;
+    font-style: normal;
+}
+.evenements li a:hover{
+    color: darkslategray;
+}
+.evenements li{
+    padding: 2em;
+}
+.evenements{
+    padding: 2em;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+#description {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 1em;
+
+}
+#description img {
+    align-self: center;
+    height : 25%;
+    width: 47%;
+    border-radius: 15px;
+}
+#actual{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background: cadetblue;
+    border-radius: 15px;
+
+}
 #photoCompétition{
     width: 35%;
     height: 35%;
@@ -184,9 +214,20 @@ p{
 section p:not(.introduction) {
     text-shadow: black 5px 5px ;
     border-radius: 15px;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.3);
     width: 50%;
     margin: 0 auto;
     font-weight: 900;
+}
+header{
+
+}
+img{
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+h4{
+    font-weight: bold;
+    padding: 1em;
 }
 
