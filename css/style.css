@@ -6,14 +6,25 @@
     text-decoration: none;
     list-style: none;
 }
+#logo{
+    animation: rotation 5s infinite linear;
+    width: 5em;
+    border-radius: 15px;
+    margin: 10px 20px;
+    position: fixed;
+    top: 100px;
+    left: 10px;
 
-p{
-    font-size: 3em;
-    color: white;
-    text-shadow: black 0px 0px 5px;
 }
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
 
-
+}
 
 html{
     background-image: url("https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/PedroPinhata/php6wV0bn.png");
@@ -23,5 +34,53 @@ html{
     background-position: center;
     height: 100%;
 }
+.menu{
 
+    top: 0;
+    font-size: 2em;
+    height: 3em;
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    z-index: 5000;
+    width: 100%;
+    margin: 0;
+    background: darkslategrey;
 
+}
+.menu li a {
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 0.3em;
+    transition: 300ms ease-in-out;
+}
+.menu li p {
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 0.3em;
+}
+
+.menu li a:hover {
+    display: block;
+    color: black;
+    background: lightseagreen;
+    transform: scale(1.1);
+
+}
+
+a{
+    color: darkslategrey;
+}
+a:hover{
+    color: black;
+}
+ul{
+
+    margin: 0 3em;
+    border-radius: 8px;
+}
