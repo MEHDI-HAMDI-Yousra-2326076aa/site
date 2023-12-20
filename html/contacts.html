@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts</title>
-    <link rel="shortcut icon" href="favicone/favicon-96x96.png">
+    <link rel="shortcut icon" href="../assets/favicone_chess.png">
     <link rel="stylesheet" href="../css/css-contact.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body >
 <header >
-<nav>
     <h1>Contactez-nous</h1><br>
 <nav>
-
     <ul class="menu">
         <li><a href="index.html">Presentation</a></li>
         <li><a href="Apprendre.html"> Apprendre</a></li>
@@ -30,18 +28,23 @@
                 <label class="label" for="email" >E-mail</label><br>
                 <input class="entrer" type="email" id="email" name="email" placeholder="votremail@gmail.com"><br>
                 <label class="label" for="Contact" >Message</label>
-                <input class="entrer" type="text" id="Contact" name="Message" placeholder="Dites nous!"><br>
-                <input id="envoyer" type="submit" value="ENVOYER">
+                <textarea  id="Contact" cols="30" rows="10" placeholder="Dites-nous!"></textarea> <br>
+                <button id="envoyer" onclick="myalert()">
+                    Envoyer
+                </button>
+                <script>
+                    let envoyer = document
+                    function myalert() {
+                        alert("Message envoyer !");
+                    }
+                </script>
             <em>"Les échecs sont le gymnase de l'esprit"</em>
             </p>
         </form>
     </main>
-    <footer class="pied-contact">
-        <h3>Êtes-vous intéressé par quelque chose d'autre ?</h3>
         <section class="plus">
         <h3>Êtes-vous intéressé par quelque chose d'autre ?</h3>
-
-        <ul >
+        <ul>
             <li>FAQ:<a  href="https://assistance.chess.com/">Pour plus de curiosité</a></li>
             <li><a  href="">A propos de nous</a></li>
             <li><a  href="https://www.amazon.fr/s?k=apprendre+echecs+debutant&adgrpid=1358997397537450&hvadid=84937795864812&hvbmt=be&hvdev=c&hvlocphy=126215&hvnetw=o&hvqmt=e&hvtargid=kwd-84937916741115%3Aloc-66&hydadcr=7679_2271176&tag=hydfrmsn-21&ref=pd_sl_1vrkydbapb_e">Quelque guides intéressant</a></li>
@@ -49,11 +52,14 @@
         </ul>
         </section>
         <section class="surnous">
-            <img src="">
+            <img class="detail" src="../assets/email.png" alt="email"><p><a href="mailto:yousramehdi38@gmail.com"> yousramehdi38@gmail.com</a></p>
+            <img class="detail"  src="../assets/phone-call.png" alt="email"> <p><a href="tel:+33 07689402">  +33 07689402</a></p>
+            <img class="detail" src="../assets/gps-navigation.png" alt="email"> <p> Rue de Manuelle - 13100</p>
         </section>
         <hr>
+<footer class="pied-contact">
         <p >Site sur les échecs- Tous droits reviennent au site <a href="https://www.chess.com/fr">chess.com</a></p>
     </footer>
 </body>
-<script src="/js/main.js"></script>
+<script src="../js/main.js"></script>
 </html>

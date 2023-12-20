@@ -6,7 +6,7 @@ document.getElementById('theme').addEventListener('click', function(){
         css.href='css/theme.css';
     }
 });
-document.getElementById('envoyer').addEventListener('',function (){
-    alert("Message envoyé !");
+document.getElementById('envoyer').addEventListener('onclick',function (){
+    alert(' Message envoyé !');
 });
 
