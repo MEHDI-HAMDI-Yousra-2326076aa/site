@@ -39,7 +39,7 @@
 
 h1 {
     font-weight: 900;
-    font-size: 6em;
+    font-size: 15em;
     margin-top: 100px;
     color: whitesmoke;
     text-shadow: 8px 8px darkslategrey;
@@ -49,18 +49,36 @@ body {
     text-align: center;
     height: fit-content;
 }
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 1em;
+    gap: 3px;
+    padding: 0.5em 0;
+}
+.stickers{
+    display: flex;
+    margin-top: 20%;
+    background-color: white;
+    padding: 1em;
+    border-radius:2em;
+
+}
 
 .menu{
 
-    top: 0;
-    font-size: 2em;
-    height: 3em;
+
+    font-size: 3em;
+    height: 2em;
     margin-top: 0.5em;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 5000;
     width: 100%;
     margin: 0;
@@ -78,7 +96,7 @@ body {
     color: white;
     font-weight: bold;
     border-radius: 15px;
-    padding: 0.3em;
+    padding: 0.3em
 }
 
 .menu li a:hover {
@@ -102,7 +120,7 @@ ul{
 }
 .introduction
 {
-    font-size: 3em;
+    font-size: 5em;
     color: white;
     font-weight: 900;
     text-shadow: black 0px 0px 50px;
