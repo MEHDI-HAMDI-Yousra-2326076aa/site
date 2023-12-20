@@ -1,23 +1,4 @@
-#logo{
-    animation: rotation 5s infinite linear;
-    width: 5em;
-    border-radius: 15px;
-    margin: 10px 20px;
-    position: fixed;
-    top: 1px;
-    left: 10px;
-    z-index: 5000;
 
-}
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(359deg);
-    }
-
-}
 #theme{
     display: flex;
     justify-content: flex-start;
@@ -66,47 +47,6 @@ footer {
 
 }
 
-.menu{
-
-
-    font-size: 3em;
-    height: 2em;
-    margin-top: 0.5em;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 5000;
-    width: 100%;
-    margin: 0;
-    background: darkslategrey;
-
-}
-.menu li a {
-    color: white;
-    font-weight: bold;
-    border-radius: 15px;
-    padding: 0.3em;
-    transition: 300ms ease-in-out;
-}
-.menu li p {
-    color: white;
-    font-weight: bold;
-    border-radius: 15px;
-    padding: 0.3em
-}
-
-.menu li a:hover {
-    display: block;
-    color: black;
-    background: lightseagreen;
-    transform: scale(1.1);
-
-}
-
 a{
     color: darkslategrey;
 }
@@ -114,7 +54,6 @@ a:hover{
     color: black;
 }
 ul{
-
     margin: 0 3em;
     border-radius: 8px;
 }
@@ -130,10 +69,8 @@ ul{
     align-items: flex-end;
 }
 #histoire {
-
     align-items: center;
     padding: 25px;
-
 }
 .titrepartie{
     font-size: 10em;
@@ -143,16 +80,14 @@ ul{
 
 }
 p{
+    font-size: 3em;
     padding: 5%;
 }
-
 #reseaux a img {
-
     height: 10em;
     width: 10em;
     margin: 0.5em;
 }
-
 #reseaux {
     width: 100%;
     display: flex;
@@ -167,7 +102,6 @@ p{
     justify-content: center;
     margin: 1em 0;
 }
-
 .evenements li a{
     color: white;
     font-weight: bold;
@@ -190,7 +124,6 @@ p{
     flex-direction: column;
     height: 100%;
     gap: 1em;
-
 }
 #description img {
     align-self: center;
@@ -198,14 +131,7 @@ p{
     width: 47%;
     border-radius: 15px;
 }
-#actual{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    background: cadetblue;
-    border-radius: 15px;
 
-}
 #photoCompétition{
     width: 35%;
     height: 35%;
@@ -230,6 +156,3 @@ h4{
     font-weight: bold;
     padding: 1em;
 }
-
-
-
