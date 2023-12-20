@@ -1,0 +1,210 @@
+
+* {
+    font-family: "Candara Light";
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    background-image: url("https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/PedroPinhata/php6wV0bn.png");;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+}
+.menu{
+
+    top: 0;
+    font-size: 2em;
+    height: 3em;
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    z-index: 5000;
+    width: 100%;
+    margin: 0;
+    background: darkslategrey;
+
+}
+.menu li a {
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 0.3em;
+    transition: 300ms ease-in-out;
+}
+.menu li p {
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 0.3em;
+}
+
+.menu li a:hover {
+    display: block;
+    color: black;
+    background: lightseagreen;
+    transform: scale(1.1);
+
+}
+
+a{
+    color: darkslategrey;
+}
+a:hover{
+    color: black;
+}
+ul{
+
+    margin: 0 3em;
+    border-radius: 8px;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 6em;
+    margin-top: 100px;
+    color: whitesmoke;
+    text-shadow: 8px 8px darkslategrey;
+}
+body {
+    color: white;
+    text-align: center;
+    height: fit-content;
+}
+/* css page*/
+#tuto main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin: 1em 0;
+    animation: tuto 2s ease-in;
+}
+@keyframes tuto{
+    0%{
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#actual{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background: saddlebrown;
+    border-radius: 15px;
+
+}
+#apprendre{
+   display: flex;
+   justify-content:space-around;
+    flex-direction: column;
+}
+#titre h2{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+}
+#titre{
+    margin: 0 20px;
+    padding: 2em;
+   }
+#petit-texte{
+    font-weight: bold;
+    color:darkslategray ;
+    width: 20em;
+    border-radius: 15px;
+    background-color: white;
+    padding: 0.3em;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+#t2 h3{
+    font-size: 2em;
+}
+h4{
+    justify-self: center;
+    text-align: center;
+    color: #e3efef;
+    background-color: black;
+    font-weight: bold;
+    padding: 1em;
+}
+.liste li a::after{
+  bottom: -5px;
+  display: flex;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 2px;
+  border-radius: 6px;
+  background-color: darkslategray;
+  transition: 0.5s;
+}
+.liste li a:hover::after{
+    width: 100%;
+}
+.liste{
+    box-shadow: 1em 2em 5em black; 
+}
+.liste li a{
+    font-weight: bold;
+    padding: 0.3em;
+    border-radius: 1em;
+    color: white;
+}
+.liste li{
+   padding: 0.5em;
+   margin : 0 1em;
+}
+.liste{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 1.5em;
+    color: white;
+}
+.tuto{
+    width: 100%;
+    height: 56.25%;
+    margin-top: 5%;
+     
+}
+.explications p{
+    color: white;
+ box-shadow: 1em 2em 5em black; 
+ background-color: transparent;
+ backdrop-filter: blur(10px);
+ border: 1px solid white;
+ display: flex;
+ flex-direction: column;
+ padding: 3em; 
+ margin: 2em;  
+}
+.images{
+ width: auto;
+ height: 15em;
+ margin-right: auto;
+ border-radius: 10%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ transform : translate(33em,0);
+}
