@@ -102,23 +102,7 @@ p{
     justify-content: center;
     margin: 1em 0;
 }
-.evenements li a{
-    color: white;
-    font-weight: bold;
-    font-style: normal;
-}
-.evenements li a:hover{
-    color: darkslategray;
-}
-.evenements li{
-    padding: 2em;
-}
-.evenements{
-    padding: 2em;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-}
+
 #description {
     display: flex;
     flex-direction: column;
@@ -145,9 +129,7 @@ section p:not(.introduction) {
     margin: 0 auto;
     font-weight: 900;
 }
-header{
 
-}
 img{
     border-radius: 5px;
     margin-bottom: 10px;

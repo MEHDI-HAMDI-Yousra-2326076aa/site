@@ -1,41 +1,132 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="stylesheet" href="css/style.css"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pages d'Achats </title>
-
+    <title> Meilleurs Joueurs </title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/achats.css">
+    <link href="favicone/favicon-96x96.png" rel="shortcut icon" type="image/png"/>
 </head>
 <body>
-    <form>
+<header>
 
 
-        <h1> Order my beautiful ChessBoard ! </h1>
+    <nav>
+        <ul class="menu">
+            <li><a >Presentation</a></li>
+            <li><a href="Apprendre.html"> Apprendre</a></li>
+            <li><a id="actual" href="Achats.html">Achats</a></li>
+            <li><a  href="contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+    <section id="presentation" >
+        <h1> Les meilleurs joueurs d'Echecs </h1>
+        <p> Vous allez découvir ici les joueurs les plus compétents de ce magnifique jeu </p>
+        <p> Il est important de noter d'abord qu'aux Echecs c'est un système de points que l'on nomme ELO qui permet de connaitre le niveau d'un joueur. Plus celui-ci est élevé plus le joueur est bon</p>
+    </section>
+    <img id="logo" src="https://www.chess.com/bundles/web/images/brand/chesscom_pawn.5dfdea51.png" alt="logo de chess.com">
 
-        <label for = "ChessBoard"> Quel type d'échiquier ? </label> <br> <br>
-        <select
-        id="choix" name="échiquier">
-        <option value = "Electronique">Electronique </option>
-        <option value = "Bois">Bois </option>
-        <option value = "Classique"> Classique </option>
-        </select> <br> <br>
 
-   
-           
-            <label for="name"> Votre nom :</label> <br>
-            <input type = "text" placeholder="Saissisez votre nom" id="name"><br><br>
-            <label for = "mail"> Votre mail </label> <br>
-            <input type = "email" id="mail" placeholder="Saisissez votre mail"><br>
+</header>
+<main>
 
-             <input type = "submit" class="button" border-radius:5px onclick=afficherAlerte()>
-        </form>
-         <script>
-    // Fonction pour afficher une alerte lorsqu'on clique sur le bouton submit
-    function afficherAlerte() {
-        alert("Votre commande à bien été effectué");
-    }
-    </script>
-    
+<table id="tableauJoueurs">
+    <th>Noms</th><th>Age</th><th>ELO</th>
+
+    <tr>
+        <td>Carlsen</td><td>30</td><td>2847</td>
+    </tr>
+    <tr>
+        <td>Nepomniachtchi</td><td>31</td><td>2789</td>
+    </tr>
+    <tr>
+        <td>Ding Liren</td><td>28</td><td>2782</td>
+    </tr>
+    <tr>
+        <td>Caruana</td><td>29</td><td>2780</td>
+    </tr>
+    <tr>
+        <td>Aronian</td><td>38</td><td>2778</td>
+    </tr>
+    <tr>
+        <td>Grischuk</td><td>37</td><td>2777</td>
+    </tr>
+    <tr>
+        <td>Mamedyarov</td><td>36</td><td>2770</td>
+    </tr>
+    <tr>
+        <td>Giri</td><td>26</td><td>2764</td>
+    </tr>
+    <tr>
+        <td>So</td><td>27</td><td>2760</td>
+    </tr>
+    <tr>
+        <td>Vachier-Lagrave</td><td>30</td><td>2758</td>
+    </tr>
+    <tr>
+        <td>Grandelius</td><td>28</td><td>2757</td>
+    </tr>
+    <tr>
+        <td>Radjabov</td><td>34</td><td>2758</td>
+    </tr>
+    <tr>
+        <td>Wang Hao</td><td>31</td><td>2756</td>
+    </tr>
+    <tr>
+        <td>Dubov</td><td>25</td><td>2754</td>
+    </tr>
+    <tr>
+        <td>Yu Yangyi</td><td>27</td><td>2752</td>
+    </tr>
+    <tr>
+        <td>Harikrishna</td><td>34</td><td>2752</td>
+    </tr>
+    <tr>
+        <td>Andreikin</td><td>30</td><td>2751</td>
+    </tr>
+    <tr>
+        <td>Navara</td><td>36</td><td>2751</td>
+    </tr>
+    <tr>
+        <td>Wei Yi</td><td>21</td><td>2751</td>
+    </tr>
+    <tr>
+        <td>Matlakov</td><td>30</td><td>2750</td>
+    </tr>
+    <tr>
+        <td>Le Quang Liem</td><td>30</td><td>2749</td>
+    </tr>
+    <tr>
+        <td>Wojtaszek</td><td>34</td><td>2748</td>
+    </tr>
+    <tr>
+        <td>Adhiban</td><td>28</td><td>2747</td>
+    </tr>
+    <tr>
+        <td>Shankland</td><td>30</td><td>2747</td>
+    </tr>
+    <tr>
+        <td>Harikrishna</td><td>34</td><td>2746</td>
+    </tr>
+    <tr>
+        <td>Harikrishna</td><td>34</td><td>2746</td>
+    </tr>
+
+</table>
+
+    <section id="les3meilleurs"
+    <p> Voyons plus précisément la présentation des 3 meilleurs joueurs </p>
+    <p> Commençons </p>
+
+</main>
+
+
+<footer>
+
+
+</footer>
 </body>
+
 </html>
