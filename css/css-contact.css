@@ -14,23 +14,9 @@ html{
     background-position: center;
     height: 100%;
 }
-.menu{
 
-    top: 0;
-    font-size: 2em;
-    height: 3em;
-    margin-top: 0.5em;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-    position: fixed;
-    z-index: 5000;
-    width: 100%;
-    margin: 0;
-    background: darkslategrey;
 
-}
+
 .menu li a {
     color: white;
     font-weight: bold;
