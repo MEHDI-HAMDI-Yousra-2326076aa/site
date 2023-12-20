@@ -1,0 +1,239 @@
+
+* {
+    font-family: "Candara Light";
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    background-image: url("https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/PedroPinhata/php6wV0bn.png");;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+}
+.menu{
+
+    top: 0;
+    font-size: 2em;
+    height: 3em;
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    z-index: 5000;
+    width: 100%;
+    margin: 0;
+    background: darkslategrey;
+
+}
+.menu li a {
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 0.3em;
+    transition: 300ms ease-in-out;
+}
+.menu li p {
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 0.3em;
+}
+
+.menu li a:hover {
+    display: block;
+    color: black;
+    background: lightseagreen;
+    transform: scale(1.1);
+
+}
+
+a{
+    color: darkslategrey;
+}
+a:hover{
+    color: black;
+}
+ul{
+
+    margin: 0 3em;
+    border-radius: 8px;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 6em;
+    margin-top: 100px;
+    color: whitesmoke;
+    text-shadow: 8px 8px darkslategrey;
+}
+body {
+    color: white;
+    text-align: center;
+    height: fit-content;
+}
+/* css page contact*/
+.contact h2{
+    animation: contacts 1s ease;
+    padding: 1em;
+}
+#contact{
+    animation: contacts 1s ease;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    padding: 3em;
+    backdrop-filter: blur(2px);
+
+    background-size: cover;
+    height: 50%;
+    width: 20%;
+    border: 3px solid white;
+    border-radius: 15px;
+}
+.contacts{
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .6s;
+}
+.plus{
+    display: flex;
+    justify-content: space-between;
+
+}
+.plus ul{
+    background-image: url("https://i.pinimg.com/564x/be/ee/e1/beeee11c2b0aece66959bd4d905dea98.jpg");
+}
+.plus img{
+    height: 10em;
+    width: 10em;
+    margin-left: 10em;
+}
+.contacts{
+    animation: contacts 1s ease-in;
+}
+@keyframes contacts {
+    0%{
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+.entrer{
+    display: flex;
+    justify-self: flex-start;
+    width: 100%;
+    height: 3em;
+    background-color: rgb(236, 244, 244);
+    border-radius: 15px;
+    padding-left: 2em;
+    padding-inline: 3em;
+    transform:translate(-45px,0);
+}
+.label{
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+    padding-bottom: 0.5em;
+    color: darkslategray;
+    font-weight: bold;
+}
+.contacts em{
+    color: white;
+    font-weight: bold;
+    font-size:0.5em ;
+    margin: 1em 0;
+
+}
+#envoyer{
+    cursor: pointer;
+    display: flex;
+    justify-self: flex-start;
+    margin: auto;
+    border: 1px solid black;
+    backdrop-filter: blur(5px);
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 0.5em;
+    font-size: 0.7em;
+}
+#envoyer:hover{
+    transform: scale(.7);
+    background-color: #e3efef;
+}
+
+.pied-contact{
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    justify-content: space-between;
+}
+.pied-contact h3{
+    color: white;
+    padding: 0.5em;
+    margin-bottom: 2em;
+}
+.pied-contact ul{
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid white;
+  border-radius: 15px;
+  margin-bottom: 5em;
+    color: black;
+}
+.plus ul{
+    animation: plus 1s ease-in-out;
+}
+@keyframes  plus {
+    0%{
+  transform:translateX(-10%);
+}30% {
+         transform: rotate(40deg);
+     }
+    65%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.pied-contact li{
+    padding: 0.5em;
+}
+.pied-contact  a{
+  color: black;
+}
+.pied-contact  a:hover{
+    color: darkslategray;
+  }
+.pied-contact P{
+    color: darkslategray;
+    font-weight: bold;
+    padding: 0.3em;
+    border-radius: 15px;
+    background-color:white;
+    width: 100%;
+}
+.pied-contact P a{
+    color: darkslategray;
+}
+.pied-contact P a:hover{
+    color: black;
+}
