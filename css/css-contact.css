@@ -68,7 +68,7 @@ body {
     animation: contacts 1s ease;
     padding: 1em;
 }
-#contact{
+.contact{
     animation: contacts 1s ease;
     font-size: 1.5em;
     display: flex;
@@ -86,25 +86,22 @@ body {
     border: 3px solid white;
     border-radius: 15px;
 }
+#Contact{
+    background-color: rgb(236, 244, 244);
+    border-radius: 15px;
+    padding-left: 2em;
+}
 .contacts{
     margin-top: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: .6s;
 }
 .plus{
-    display: flex;
-    justify-content: space-between;
-
-}
-.plus ul{
-    background-image: url("https://i.pinimg.com/564x/be/ee/e1/beeee11c2b0aece66959bd4d905dea98.jpg");
-}
-.plus img{
-    height: 10em;
-    width: 10em;
-    margin-left: 10em;
+    display:flex;
+    flex-direction: column;
 }
 .contacts{
     animation: contacts 1s ease-in;
@@ -138,13 +135,6 @@ body {
     color: darkslategray;
     font-weight: bold;
 }
-.contacts em{
-    color: white;
-    font-weight: bold;
-    font-size:0.5em ;
-    margin: 1em 0;
-
-}
 #envoyer{
     cursor: pointer;
     display: flex;
@@ -169,44 +159,44 @@ body {
     font-size: 1.5em;
     justify-content: space-between;
 }
-.pied-contact h3{
+h3{
+    font-family: "Comic Sans MS";
+    font-weight: 600;
     color: white;
     padding: 0.5em;
     margin-bottom: 2em;
 }
-.pied-contact ul{
+.plus ul{
   padding: 2em;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   border: 1px solid white;
   border-radius: 15px;
   margin-bottom: 5em;
     color: black;
+    background-color: white;
+    object-fit: fill;
 }
 .plus ul{
     animation: plus 1s ease-in-out;
 }
 @keyframes  plus {
     0%{
+        opacity: 0;
   transform:translateX(-10%);
-}30% {
-         transform: rotate(40deg);
-     }
-    65%{
-        transform: rotate(0deg);
-    }
+}
     100%{
+        opacity: 1;
         transform: translateX(0);
     }
 }
-.pied-contact li{
+.plus li{
     padding: 0.5em;
 }
-.pied-contact  a{
+.plus a{
   color: black;
 }
-.pied-contact  a:hover{
+.plus a:hover{
     color: darkslategray;
   }
 .pied-contact P{
@@ -222,4 +212,19 @@ body {
 }
 .pied-contact P a:hover{
     color: black;
+}
+.surnous img{
+    width: 4%;
+    background-color: white;
+    border-radius: 30px;
+    padding: 0.3em;
+    margin-bottom: 1em;
+}
+.surnous{
+    display: flex;
+    justify-content: space-around;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
 }
