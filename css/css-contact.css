@@ -82,7 +82,7 @@ body {
     animation: contacts 1s ease;
     padding: 1em;
 }
-#contact{
+.contact{
     animation: contacts 1s ease;
     font-size: 1.5em;
     display: flex;
@@ -111,9 +111,6 @@ body {
     display: flex;
     justify-content: space-between;
 
-}
-.plus ul{
-    background-image: url("https://i.pinimg.com/564x/be/ee/e1/beeee11c2b0aece66959bd4d905dea98.jpg");
 }
 .plus img{
     height: 10em;
@@ -151,13 +148,6 @@ body {
     padding-bottom: 0.5em;
     color: darkslategray;
     font-weight: bold;
-}
-.contacts em{
-    color: white;
-    font-weight: bold;
-    font-size:0.5em ;
-    margin: 1em 0;
-
 }
 #envoyer{
     cursor: pointer;
@@ -203,14 +193,11 @@ body {
 }
 @keyframes  plus {
     0%{
+        opacity: 0;
   transform:translateX(-10%);
-}30% {
-         transform: rotate(40deg);
-     }
-    65%{
-        transform: rotate(0deg);
-    }
+}
     100%{
+        opacity: 1;
         transform: translateX(0);
     }
 }
