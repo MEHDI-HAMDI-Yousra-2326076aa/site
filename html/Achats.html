@@ -15,7 +15,7 @@
 
     <nav>
         <ul class="menu">
-            <li><a >Presentation</a></li>
+            <li><a href="index.html">Presentation</a></li>
             <li><a href="Apprendre.html"> Apprendre</a></li>
             <li><a id="actual" href="Achats.html">Achats</a></li>
             <li><a  href="contacts.html">Contacts</a></li>
@@ -23,7 +23,7 @@
     </nav>
     <section id="presentation" >
         <h1> Les meilleurs joueurs d'Echecs </h1>
-        <p> Vous allez découvir ici les joueurs les plus compétents de ce magnifique jeu </p>
+        <p id="introduction"> Vous allez découvir ici les joueurs les plus compétents de ce magnifique jeu </p>
         <p> Il est important de noter d'abord qu'aux Echecs c'est un système de points que l'on nomme ELO qui permet de connaitre le niveau d'un joueur. Plus celui-ci est élevé plus le joueur est bon</p>
     </section>
     <img id="logo" src="https://www.chess.com/bundles/web/images/brand/chesscom_pawn.5dfdea51.png" alt="logo de chess.com">
@@ -32,93 +32,36 @@
 </header>
 <main>
 
-<table id="tableauJoueurs">
-    <th>Noms</th><th>Age</th><th>ELO</th>
+    <table id="tableauJoueurs">
+        <th>Noms</th><th>Age</th><th>ELO</th><th>Nationalité</th>
+        <tr><td>Magnus Carlsen</td><td>30</td><td>2847</td><td><img src="/site/drapeauxPays/no.png"></td></tr>
+        <tr><td>Wesley So</td><td>27</td><td>2770</td><td><img src="/site/drapeauxPays/ph.png"></td></tr>
+        <tr><td>Fabiano Caruana</td><td>28</td><td>2767</td><td><img src="/site/drapeauxPays/us.png"></td></tr>
+        <tr><td>Ding Liren</td><td>28</td><td>2760</td><td><img src="/site/drapeauxPays/cn.png"></td></tr>
+        <tr><td>Maxime Vachier-Lagrave</td><td>30</td><td>2758</td><td><img src="/site/drapeauxPays/fr.png"></td></tr>
+        <tr><td>Levon Aronian</td><td>38</td><td>2758</td><td><img src="/site/drapeauxPays/am.png"></td></tr>
+        <tr><td>Shakhriyar Mamedyarov</td><td>36</td><td>2756</td><td><img src="/site/drapeauxPays/az.png"></td></tr>
+        <tr><td>Teimour Radjabov</td><td>33</td><td>2756</td><td><img src="/site/drapeauxPays/az.png"></td></tr>
 
-    <tr>
-        <td>Carlsen</td><td>30</td><td>2847</td>
-    </tr>
-    <tr>
-        <td>Nepomniachtchi</td><td>31</td><td>2789</td>
-    </tr>
-    <tr>
-        <td>Ding Liren</td><td>28</td><td>2782</td>
-    </tr>
-    <tr>
-        <td>Caruana</td><td>29</td><td>2780</td>
-    </tr>
-    <tr>
-        <td>Aronian</td><td>38</td><td>2778</td>
-    </tr>
-    <tr>
-        <td>Grischuk</td><td>37</td><td>2777</td>
-    </tr>
-    <tr>
-        <td>Mamedyarov</td><td>36</td><td>2770</td>
-    </tr>
-    <tr>
-        <td>Giri</td><td>26</td><td>2764</td>
-    </tr>
-    <tr>
-        <td>So</td><td>27</td><td>2760</td>
-    </tr>
-    <tr>
-        <td>Vachier-Lagrave</td><td>30</td><td>2758</td>
-    </tr>
-    <tr>
-        <td>Grandelius</td><td>28</td><td>2757</td>
-    </tr>
-    <tr>
-        <td>Radjabov</td><td>34</td><td>2758</td>
-    </tr>
-    <tr>
-        <td>Wang Hao</td><td>31</td><td>2756</td>
-    </tr>
-    <tr>
-        <td>Dubov</td><td>25</td><td>2754</td>
-    </tr>
-    <tr>
-        <td>Yu Yangyi</td><td>27</td><td>2752</td>
-    </tr>
-    <tr>
-        <td>Harikrishna</td><td>34</td><td>2752</td>
-    </tr>
-    <tr>
-        <td>Andreikin</td><td>30</td><td>2751</td>
-    </tr>
-    <tr>
-        <td>Navara</td><td>36</td><td>2751</td>
-    </tr>
-    <tr>
-        <td>Wei Yi</td><td>21</td><td>2751</td>
-    </tr>
-    <tr>
-        <td>Matlakov</td><td>30</td><td>2750</td>
-    </tr>
-    <tr>
-        <td>Le Quang Liem</td><td>30</td><td>2749</td>
-    </tr>
-    <tr>
-        <td>Wojtaszek</td><td>34</td><td>2748</td>
-    </tr>
-    <tr>
-        <td>Adhiban</td><td>28</td><td>2747</td>
-    </tr>
-    <tr>
-        <td>Shankland</td><td>30</td><td>2747</td>
-    </tr>
-    <tr>
-        <td>Harikrishna</td><td>34</td><td>2746</td>
-    </tr>
-    <tr>
-        <td>Harikrishna</td><td>34</td><td>2746</td>
-    </tr>
-
-</table>
-
-    <section id="les3meilleurs"
-    <p> Voyons plus précisément la présentation des 3 meilleurs joueurs </p>
-    <p> Commençons </p>
+    </table>
+    <p> Nous allons désormais nous concentrer sur les 3 meilleurs joueurs d'Echecs et leur histoire</p>
+    <section id="les3Meilleurs" >
+        <section id="Mehdi">
+        <h2> SEBBAK Mehdi </h2>
+        <img class="photosMeilleurs" src="/site/PhotosDesMeilleursJoueurs/happy_mehdi.jpg" alt="photo de Mehdi Sebbak">
+        <p> Ce bel homme Français est considéré dans le milieu comme le plus fort du domaine des Echecs, malgré le fait qu'il ne figure pas dans le classement élo par modestie, il prouva à de multiples reprises qu'il est le meilleur.</p>
+        </section>
+        <section id="Magnus">
+           <h3> Magnus Carlsen </h3>
+        <img class="photosMeilleurs" src="/site/PhotosDesMeilleursJoueurs/5081.webp" alt="photo de Magnus Carlsen">
+        <p> Magnus Carlsen est un joueur d'échecs norvégien né le 30 novembre 1990 à Tønsberg. Il est grand maître international depuis 2004. Il a remporté le championnat du monde d'échecs en 2013, 2014, 2016, 2018 et 2021. Il est considéré comme le meilleur joueur d'échecs de tous les temps derrière le grand SEBBAK Mehdi.</p>
+        </section>
+        <section id="Wesley">
+        <h4> Wesley so</h4>
+        <img class="photosMeilleurs" src="/site/PhotosDesMeilleursJoueurs/Wesley_So,_2015.jpg" alt="photo de Wesley So">
+        <p> Wesley So est un joueur d'échecs américano-philippin né le 9 octobre 1993 à Bacoor. Il a obtenu le titre de grand maître international en 2008. Il a remporté le championnat des États-Unis en 2017 et 2020 et le championnat du monde d'échecs en 2021.</p>
+</section>
+    </section>
 
 </main>
 

@@ -1,9 +1,38 @@
 h1{
     font-weight: 900;
-    font-size: 4em;
+    font-size: 5em;
     margin-top: 100px;
     color: whitesmoke;
     text-shadow: 8px 8px darkslategrey;
+}
+h2,h3,h4{
+    color: white;
+    font-size: 3em;
+    text-shadow: 5px 5px darkslategrey;
+
+
+
+
+}
+
+section p:not(#introduction){
+
+    text-shadow: black 5px 5px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    width: 75%;
+    font-weight: 900;
+    margin: auto;
+    margin-bottom: 100px;
+}
+#introduction{
+
+    font-size: 3em;
+    color: white;
+    font-weight: 900;
+    text-shadow: black 0px 0px 50px;
+    padding: 50px;
+
 }
 #presentation{
     margin-top: 5%;
@@ -13,25 +42,47 @@ h1{
     align-items: center;
     font-size: 2em;
 }
-#tableauJoueurs{
+#tableauJoueurs {
 
-margin-top: 10%;
     color: white;
     display: flex;
     font-size: 2em;
-    border : solid forestgreen 2px;
-    width: 20%;
-    margin:auto;
+    border: solid forestgreen 2px;
+    width: 50%;
+    margin: auto;
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 15px;
+    margin-bottom: 100px;
 }
+#tableauJoueurs td {
+border: dotted black;
+    padding: 80px;
+    border-radius: 15px;
+}
+
+
 table{
     justify-content: space-around;
 }
-#les3meilleurs{
+#les3Meilleurs{
     margin-top: 10%;
 color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     font-size: 2em;
+
+}
+.photosMeilleurs{
+    width: 10em;
+    border-radius: 500px;
+}
+#Mehdi, #Magnus, #Wesley {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
 }
