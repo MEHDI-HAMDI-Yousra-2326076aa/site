@@ -74,10 +74,81 @@ html{
     transform: scale(1.1);
 
 }
-#actual {
+
+.actual {
     color: white;
     font-weight: bold;
     text-decoration: none;
     background: cadetblue;
     border-radius: 15px;
+}
+.menuHamburger {
+    display: none;
+}
+
+
+.menuDeroulantActif {
+    display: none;
+}
+@media only screen and (max-width: 1200px) {
+
+ .menu {
+display: none;
+    }
+    .menuDeroulantActif{
+
+        margin-top: -100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height:  20em;
+        width: 100%;
+
+        background: rgba(47, 79, 79, 0.9);
+        position: fixed;
+        top: 0;
+        z-index: 5000;
+        transition: all 200ms ease-in-out;
+
+    }
+
+    .menuDeroulantActif li a {
+        color: white;
+        font-weight: bold;
+        border-radius: 15px;
+        padding: 0.3em;
+        transition: 300ms ease-in-out;
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+    }
+    .menuDeroulantActif li a:hover {
+
+        color: black;
+        background: lightseagreen;
+        transform: scale(1.1);
+
+    }
+    .mobile-menu{
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+
+
+    .menuHamburger {
+        display: block;
+        position: fixed;
+        top:1px;
+        right: 0;
+        height: 60px;
+        width: 60px;
+        z-index: 5001;
+        cursor: pointer;
+        transition: .3s transform ease-in-out;
+
+    }
+    .menuHamburger:hover{
+        transform: scale(1.05);
+    }
 }

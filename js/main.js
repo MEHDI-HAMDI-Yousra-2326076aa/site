@@ -1,12 +1,10 @@
-document.getElementById('theme').addEventListener('click', function(){
-    css = document.getElementById('css');
-    if(css.href.endsWith("/css/theme.css")) {
-        css.href='css/style.css'
-    } else {
-        css.href='css/theme.css';
-    }
-});
-document.getElementById('envoyer').addEventListener('onclick',function (){
-    alert(' Message envoyé !');
-});
 
+const menuHamburger = document.querySelector(".menuHamburger");
+const menu = document.querySelector('.menuDeroulantActif');
+
+if (menuHamburger) {
+    menuHamburger.addEventListener('click', function () {
+        menu.classList.toggle('mobile-menu');
+
+    });
+}

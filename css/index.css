@@ -1,13 +1,15 @@
 
-#theme{
-    display: flex;
-    justify-content: flex-start;
+#changementTheme{
+    position: fixed;
+    top: 0;
+    right: 100px;
     margin: 0.5em;
     border-radius: 15%;
     padding: 1em;
     height: 1em;
     width: 1em;
     cursor: pointer;
+    z-index: 5001;
 }
 .theme{
     top:0;
@@ -68,6 +70,7 @@ ul{
     padding: 25%;
     align-items: flex-end;
 }
+
 #histoire {
     align-items: center;
     padding: 25px;
@@ -76,6 +79,8 @@ ul{
     font-size: 10em;
     color: darkslategrey;
     text-shadow: 4px 4px white;
+    display: flex;
+    justify-content: center;
 
 
 }
@@ -137,4 +142,24 @@ img{
 h4{
     font-weight: bold;
     padding: 1em;
+}
+@media screen and (max-width: 1200px){
+
+    h1 {
+        font-weight: 900;
+        font-size: 10em;
+        margin-top: 100px;
+        color: whitesmoke;
+        text-shadow: 8px 8px darkslategrey;
+    }
+    p{
+        font-size: 2em;
+        padding: 5%;
+
+    }
+
+
+
+
+
 }
