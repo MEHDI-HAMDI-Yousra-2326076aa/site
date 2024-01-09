@@ -49,16 +49,15 @@ display: flex;
     font-size: 2em;
     border: solid forestgreen 2px;
     width: 60%;
-    margin: auto;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 50px;
     border-radius: 15px;
-    margin-bottom: 100px;
+    margin: auto auto 100px;
+    padding : 10%
 }
 #tableauJoueurs td {
 border: dotted black;
-    padding: 80px;
-    border-radius: 15px;
+
 }
 
 
