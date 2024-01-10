@@ -1,0 +1,208 @@
+p {
+    font-size: 2em;
+}
+
+a{
+    color: darkslategrey;
+}
+a:hover{
+    color: black;
+}
+ul{
+
+    margin: 0 3em;
+    border-radius: 8px;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 6em;
+    margin-top: 100px;
+    color: whitesmoke;
+    text-shadow: 8px 8px saddlebrown;
+}
+body {
+    color: white;
+    text-align: center;
+    height: fit-content;
+}
+/* css page*/
+#tuto main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin: 1em 0;
+    animation: tuto 2s ease-in;
+}
+@keyframes tuto{
+    0%{
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#actual{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    background: saddlebrown;
+    border-radius: 15px;
+
+}
+#apprendre{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+}
+#titre h2{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+}
+#titre{
+    margin: 0 20px;
+    padding: 2em;
+}
+#petit-texte{
+    font-weight: bold;
+    color: white ;
+    width: 20em;
+    border-radius: 15px;
+    background-color: black;
+    padding: 0.3em;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+#t2 h3{
+    font-size: 2em;
+}
+h4{
+    font-size: 1.5em;
+    justify-self: center;
+    text-align: center;
+    color: #e3efef;
+    background-color: black;
+    font-weight: bold;
+    padding: 1em;
+}
+.liste li a::after{
+    bottom: -5px;
+    display: flex;
+    right: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: darkslategray;
+    transition: 0.5s;
+}
+.liste li a:hover::after{
+    width: 100%;
+}
+.liste{
+    box-shadow: 1em 2em 5em black;
+}
+.liste li a{
+    font-weight: bold;
+    padding: 0.3em;
+    border-radius: 1em;
+    color: black;
+}
+.liste li{
+    padding: 0.5em;
+    margin : 0 1em;
+}
+.liste{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 1.5em;
+    color: black;
+}
+
+.tuto iframe{
+    width:560px;
+    height: 315px;
+}
+.explications p{
+    color: black;
+    box-shadow: 1em 2em 5em black;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    margin: 2em;
+}
+.images{
+    width: auto;
+    height: 15em;
+    margin: auto;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.special{
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images:hover{
+    transform: scale(1.5);
+}
+@media (max-width: 1500px){
+    h1{
+        font-size: 5em;
+    }
+    .explications{
+        font-size: 0.7em;
+    }
+    .images:hover{
+        transform: scale(1.2);
+    }
+    h2{
+        margin-bottom: 1em;
+    }
+}
+@media (max-width: 670px) {
+    h2 {
+        font-size: 1em;
+    }
+    .explications{
+        font-size: 0.5em;
+    }
+    .tuto iframe{
+        width:320px;
+        height: 200px;
+    }
+}
+@media (max-width: 450px){
+    h1{
+        font-size: 2em;
+    }
+    .tuto iframe{
+        width:200px;
+        height: 100px;
+    }
+
+}
+@media (max-width: 230px){
+    h1{
+        font-size: 1em;
+    }
+}
