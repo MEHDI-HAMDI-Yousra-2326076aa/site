@@ -230,9 +230,9 @@ h3{
 
     .contact {
         width: 100%;
-        display: grid;
+        display: flex;
         border: none;
-        justify-content: space-between;
+        justify-content: center;
         backdrop-filter: blur(0px);
     }
 
