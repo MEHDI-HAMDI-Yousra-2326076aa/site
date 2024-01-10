@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body >
-<header >
+ <header >
     <h1>Contactez-nous</h1><br>
 <nav>
     <ul class="menu">
@@ -30,22 +30,18 @@
     </ul>
 <h2>Posez-nous vos questions !</h2>
    </header>
-    <main class="contacts">
-        <form class="contact" action="#" method="post" enctype="text/plain">
-            <p>
+      <form class="contact" action="#" method="post" enctype="text/plain">
+          <h2>Votre retour!</h2>
                 <label class="label" for="email" >E-mail</label><br>
-                <input class="entrer" type="email" id="email" name="email" placeholder="votremail@gmail.com"><br>
-                <label class="label" for="Contact" >Message</label>
-                <textarea  id="Contact" cols="30" rows="10" placeholder="Dites-nous!"></textarea> <br>
-                <button id="envoyer" onclick="myalert()">
-                    Envoyer
+                <input class="entrer" type="email" id="email" name="email" placeholder="votremail@gmail.com" ><br>
+          <label class="label"   for="sujet">Sujet</label><br>
+          <input class="entrer" type="text" id="sujet" name="sujet" placeholder="objet" ><br>
+                <label class="label" id="mess" for="Contact" >Message</label>
+                <textarea   id="Contact" cols="30" rows="10" placeholder="Dites-nous!"></textarea> <br>
+                <button id="envoyer" >
+                   Envoyer
                 </button>
-                <script>
-                    let envoyer = document
-                    function myalert() {
-                        alert("Message envoyer !");
-                    }
-                </script>
+
             <em>"Les échecs sont le gymnase de l'esprit"</em>
             </p>
         </form>
@@ -61,13 +57,16 @@
         </section>
         <section class="surnous">
             <img class="detail" src="../assets/email.png" alt="email"><p><a href="mailto:yousramehdi38@gmail.com"> yousramehdi38@gmail.com</a></p>
-            <img class="detail"  src="../assets/phone-call.png" alt="email"> <p><a href="tel:+33 07689402">  +33 07689402</a></p>
-            <img class="detail" src="../assets/gps-navigation.png" alt="email"> <p> Rue de Manuelle - 13100</p>
+            <img class="detail"  src="../assets/phone-call.png" alt="tel"> <p><a href="tel:+33 07689402">  +33 07689402</a></p>
+            <img class="detail" src="../assets/gps-navigation.png" alt="gps"> <p> Rue de Manuelle - 13100</p>
         </section>
         <hr>
 <footer class="pied-contact">
         <p >Site sur les échecs- Tous droits reviennent au site <a href="https://www.chess.com/fr">chess.com</a></p>
     </footer>
 </body>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="../js/main.js"></script>
 </html>
