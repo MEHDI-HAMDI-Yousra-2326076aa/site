@@ -16,6 +16,20 @@ html{
     background-position: center;
     height: 100%;
 }
+#changementTheme{
+    background-color: darkslategrey;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    margin: 0.5em;
+    border-radius: 15%;
+    padding: 1em;
+    height: 1em;
+    width: 1em;
+    cursor: pointer;
+    z-index: 5001;
+}
+
 .logo1{
     display: none;
 }
