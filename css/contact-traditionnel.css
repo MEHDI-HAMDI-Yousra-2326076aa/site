@@ -1,0 +1,262 @@
+
+
+h1 {
+    font-weight: 900;
+    font-size: 6em;
+    margin-top: 100px;
+    color: whitesmoke;
+    text-shadow: 8px 8px saddlebrown;
+}
+body {
+    color: white;
+    text-align: center;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+/* css page contact*/
+h2{
+    animation: contacts 1s ease;
+}
+.contact{
+    animation: contacts 1s ease;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    padding: 3em;
+    backdrop-filter: blur(2px);
+    width: 30%;
+    border: 3px solid white;
+    border-radius: 15px;
+}
+#Contact{
+    background-color: rgb(236, 244, 244);
+    border-radius: 15px;
+    padding-left: 2em;
+}
+
+.plus{
+    display:flex;
+    flex-direction: column;
+}
+.contacts{
+    animation: contacts 1s ease-in;
+}
+@keyframes contacts {
+    0%{
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+.entrer{
+    border: none;
+    outline: none;
+    display: flex;
+    width: 100%;
+    height: 3em;
+    background-color: rgb(236, 244, 244);
+    border-radius: 15px;
+    padding-left: 2em;
+
+}
+.entrer:focus{
+    border: 2px solid darkslategray;
+}
+textarea:focus{
+    border: 2px solid darkslategray;
+}
+.label{
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    padding-bottom: 0.5em;
+    color: saddlebrown;
+    font-weight: bold;
+}
+textarea::placeholder{
+    color: black;
+    margin: auto;
+    padding-top: 1em;
+    text-align: center;
+}
+#envoyer{
+    cursor: pointer;
+    display: flex;
+    justify-self: flex-start;
+    margin: auto;
+    border: 1px solid black;
+    backdrop-filter: blur(5px);
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 0.5em;
+    font-size: 0.7em;
+}
+#envoyer:hover{
+    transform: scale(.7);
+    background-color: #e3efef;
+}
+
+.pied-contact{
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    justify-content: space-between;
+}
+h3{
+    font-weight: bold;
+    color: white;
+    padding: 0.5em;
+    margin-bottom: 2em;
+}
+.plus ul{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-bottom: 5em;
+    color: black;
+    background-color: white;
+    object-fit: fill;
+    font-weight: bold;
+}
+.plus ul{
+    animation: plus 1s ease-in-out;
+}
+@keyframes  plus {
+    0%{
+        opacity: 0;
+        transform:translateX(-10%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.plus li{
+    padding: 0.5em;
+}
+.plus a{
+    color: black;
+}
+.plus a:hover{
+    color: darkslategray;
+}
+.pied-contact P{
+    color: darkslategray;
+    font-weight: bold;
+    padding: 0.3em;
+    border-radius: 15px;
+    background-color:white;
+    width: 100%;
+}
+.pied-contact P a{
+    color: darkslategray;
+}
+.pied-contact P a:hover{
+    color: black;
+}
+.surnous img{
+    width: 4%;
+    background-color: white;
+    border-radius: 30px;
+    padding: 0.3em;
+    margin-bottom: 1em;
+}
+.surnous{
+    display: flex;
+    justify-content: space-around;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+}
+.surnous a{
+    color: white;
+}
+.surnous a::after{
+    bottom: -5px;
+    display: flex;
+    right: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: darkslategray;
+    transition: 0.5s;
+}
+.surnous a:hover::after{
+    width: 100%;
+}
+@media (max-width: 1000px){
+    h1{
+        font-size: 4em;
+    }
+    h2{
+        margin-bottom: 1em;
+    }
+    .contact{
+        width: 50%;
+        margin: 3em;
+        padding: 2em;
+        font-size: 1em   ;
+    }
+
+    .entrer{
+        width: 70%;
+        height: 2em;
+        margin: auto;
+    }
+    .label,textarea {
+        margin: auto;
+        padding-bottom: 0.1em;
+    }
+}
+@media (max-width: 670px) {
+    h2 {
+        font-size: 1em;
+    }
+
+    .contact {
+        width: 100%;
+        display: flex;
+        border: none;
+        justify-content: center;
+        backdrop-filter: blur(0px);
+    }
+
+    .entrer {
+        margin:auto;
+    }
+
+    textarea {
+        margin: auto;
+    }
+
+    .surnous {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 450px){
+    h1{
+        font-size: 2em;
+    }
+
+}
+@media (max-width: 230px){
+    h1{
+        font-size: 1em;
+    }
+}

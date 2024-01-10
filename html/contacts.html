@@ -2,70 +2,78 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contactez les créateurs de ce magnifique site.">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Contactez les créateurs de ce magnifique site." name="description">
 
     <title>Contacts</title>
-    <link rel="shortcut icon" href="../favicone/favicon-96x96.png">
-    <link rel="stylesheet" href="../css/css-contact.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="../favicone/favicon-96x96.png" rel="shortcut icon">
+    <link href="../css/contact-traditionnel.css" rel="stylesheet">
+    <link href="../css/style-traditionnel.css" rel="stylesheet">
 </head>
-<body >
- <header >
+<body>
+<header>
     <h1>Contactez-nous</h1><br>
-<nav>
-    <ul class="menu">
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Presentation</a></li>
+            <li><a href="Apprendre.html"> Apprendre</a></li>
+            <li><a href="Joueurs.html">Joueurs</a></li>
+            <li><a class="actual" href="#">Contacts</a></li>
+        </ul>
+    </nav>
+    <img alt="logo de chess.com" class="logo logo1"
+         src="https://www.chess.com/bundles/web/images/brand/chesscom_pawn.5dfdea51.png">
+    <img alt="favicon du code" class="logo logo2" src="https://cdn-icons-png.flaticon.com/512/5462/5462881.png">
+
+    <img alt="menu déroulant" class=menuHamburger src="https://cdn-icons-png.flaticon.com/512/54/54630.png">
+    <ul class="menuDeroulantActif">
         <li><a href="index.html">Presentation</a></li>
         <li><a href="Apprendre.html"> Apprendre</a></li>
         <li><a href="Joueurs.html">Joueurs</a></li>
-        <li><a  id="actual" href="#">Contacts</a></li>
+        <li><a class="actual" href="#">Contacts</a></li>
     </ul>
-</nav>
-    <img id="logo" src="https://www.chess.com/bundles/web/images/brand/chesscom_pawn.5dfdea51.png" alt="favicon du code">
+    <h2>Posez-nous vos questions !</h2>
+</header>
+<form action="#" class="contact" enctype="text/plain" method="post">
+    <h2>Votre retour!</h2>
+    <label class="label" for="email">E-mail</label><br>
+    <input class="entrer" id="email" name="email" placeholder="votremail@gmail.com" type="email"><br>
+    <label class="label" for="sujet">Sujet</label><br>
+    <input class="entrer" id="sujet" name="sujet" placeholder="objet" type="text"><br>
+    <label class="label" for="Contact" id="mess">Message</label>
+    <textarea cols="30" id="Contact" placeholder="Dites-nous!" rows="10"></textarea> <br>
+    <button id="envoyer">
+        Envoyer
+    </button>
 
-    <img class=menuHamburger src="https://cdn-icons-png.flaticon.com/512/54/54630.png" alt="menu déroulant" >
-    <ul class="menuDeroulantActif">
-        <li ><a href="index.html" >Presentation</a></li>
-        <li ><a href="Apprendre.html" > Apprendre</a></li>
-        <li ><a href="Joueurs.html">Joueurs</a></li>
-        <li ><a class="actual" href="#">Contacts</a></li>
+    <em>"Les échecs sont le gymnase de l'esprit"</em>
+    </p>
+</form>
+</main>
+<section class="plus">
+    <h3>Êtes-vous intéressé par quelque chose d'autre ?</h3>
+    <ul>
+        <li>FAQ:<a href="https://assistance.chess.com/">Pour plus de curiosité</a></li>
+        <li><a href="">A propos de nous</a></li>
+        <li>
+            <a href="https://www.amazon.fr/s?k=apprendre+echecs+debutant&adgrpid=1358997397537450&hvadid=84937795864812&hvbmt=be&hvdev=c&hvlocphy=126215&hvnetw=o&hvqmt=e&hvtargid=kwd-84937916741115%3Aloc-66&hydadcr=7679_2271176&tag=hydfrmsn-21&ref=pd_sl_1vrkydbapb_e">Quelque
+                guides intéressant</a></li>
+        <li>Questions ? : <a href="https://www.chess.com/fr/blog/Skaki72/les-problemes-pourquoi-et-comment">Ce qui
+            revient souvent</a></li>
     </ul>
-<h2>Posez-nous vos questions !</h2>
-   </header>
-      <form class="contact" action="#" method="post" enctype="text/plain">
-          <h2>Votre retour!</h2>
-                <label class="label" for="email" >E-mail</label><br>
-                <input class="entrer" type="email" id="email" name="email" placeholder="votremail@gmail.com" ><br>
-          <label class="label"   for="sujet">Sujet</label><br>
-          <input class="entrer" type="text" id="sujet" name="sujet" placeholder="objet" ><br>
-                <label class="label" id="mess" for="Contact" >Message</label>
-                <textarea   id="Contact" cols="30" rows="10" placeholder="Dites-nous!"></textarea> <br>
-                <button id="envoyer" >
-                   Envoyer
-                </button>
-
-            <em>"Les échecs sont le gymnase de l'esprit"</em>
-            </p>
-        </form>
-    </main>
-        <section class="plus">
-        <h3>Êtes-vous intéressé par quelque chose d'autre ?</h3>
-        <ul>
-            <li>FAQ:<a  href="https://assistance.chess.com/">Pour plus de curiosité</a></li>
-            <li><a  href="">A propos de nous</a></li>
-            <li><a  href="https://www.amazon.fr/s?k=apprendre+echecs+debutant&adgrpid=1358997397537450&hvadid=84937795864812&hvbmt=be&hvdev=c&hvlocphy=126215&hvnetw=o&hvqmt=e&hvtargid=kwd-84937916741115%3Aloc-66&hydadcr=7679_2271176&tag=hydfrmsn-21&ref=pd_sl_1vrkydbapb_e">Quelque guides intéressant</a></li>
-            <li>Questions ? : <a href="https://www.chess.com/fr/blog/Skaki72/les-problemes-pourquoi-et-comment">Ce qui revient souvent</a> </li>
-        </ul>
-        </section>
-        <section class="surnous">
-            <img class="detail" src="../assets/email.png" alt="email"><p><a href="mailto:yousramehdi38@gmail.com"> yousramehdi38@gmail.com</a></p>
-            <img class="detail"  src="../assets/phone-call.png" alt="tel"> <p><a href="tel:+33 07689402">  +33 07689402</a></p>
-            <img class="detail" src="../assets/gps-navigation.png" alt="gps"> <p> Rue de Manuelle - 13100</p>
-        </section>
-        <hr>
+</section>
+<section class="surnous">
+    <img alt="email" class="detail" src="../assets/email.png">
+    <p><a href="mailto:yousramehdi38@gmail.com"> yousramehdi38@gmail.com</a></p>
+    <img alt="tel" class="detail" src="../assets/phone-call.png">
+    <p><a href="tel:+33 07689402"> +33 07689402</a></p>
+    <img alt="gps" class="detail" src="../assets/gps-navigation.png">
+    <p> Rue de Manuelle - 13100</p>
+</section>
+<hr>
 <footer class="pied-contact">
-        <p >Site sur les échecs- Tous droits reviennent au site <a href="https://www.chess.com/fr">chess.com</a></p>
-    </footer>
+    <p>Site sur les échecs- Tous droits reviennent au site <a href="https://www.chess.com/fr">chess.com</a></p>
+</footer>
 </body>
 <script src="https://smtpjs.com/v3/smtp.js">
 </script>
