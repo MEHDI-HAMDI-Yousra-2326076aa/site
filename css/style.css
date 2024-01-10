@@ -20,7 +20,7 @@ html{
 
 #logo{
     animation: rotation 5s infinite linear;
-    width: 5em;
+    width: 3em;
     border-radius: 15px;
     margin: 10px 20px;
     position: fixed;
@@ -40,8 +40,7 @@ html{
 
     top: 0;
     font-size: 2em;
-    height: 3em;
-    margin-top: 0.5em;
+    height: 2em;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -53,6 +52,7 @@ html{
     background: darkslategrey;
 }
 .menu li a {
+    font-size: 0.7em;
     color: white;
     font-weight: bold;
     border-radius: 15px;
@@ -101,7 +101,7 @@ display: none;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height:  20em;
+        height:  10em;
         width: 100%;
 
         background: rgba(47, 79, 79, 0.9);
@@ -118,7 +118,7 @@ display: none;
         border-radius: 15px;
         padding: 0.3em;
         transition: 300ms ease-in-out;
-        font-size: 2em;
+        font-size: 1em;
         display: flex;
         justify-content: center;
     }
