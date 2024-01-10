@@ -69,7 +69,7 @@ table{
 }
 #les3Meilleurs{
     margin-top: 10%;
-color: white;
+     color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -91,6 +91,32 @@ color: white;
 }
 #Magnus{
     order: 2;
+}
+video{
+
+     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+#md{
+    cursor: pointer;
+}
+#btnfermer{
+    border: none;
+    background: transparent;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#btnfermer img{
+    background: transparent;
+    
+    position: fixed;
+    width: 10%;
 }
 @media screen and (max-width: 1200px){
 
@@ -129,9 +155,12 @@ color: white;
 
     }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
 
     p{
         font-size: 0.5em;
+    }
+    #tableauJoueurs{
+        width: 100%;
     }
 }

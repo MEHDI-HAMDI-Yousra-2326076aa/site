@@ -35,9 +35,17 @@ if(document.getElementById('theme')) document.getElementById('theme').addEventLi
 function myalert() {
     alert("Merci pour votre retour !");
 }
+function ouvrir() {
+    let videoContainer = document.getElementById('video');
 
+    videoContainer.style.display = 'block';
+}
+function fermer() {
+    let videoContainer = document.getElementById('video');
 
-
+    videoContainer.style.display = 'none';
+}
+if(document.getElementById('btnfermer')) document.getElementById('btnfermer').addEventListener('click',fermer);
 
 
 
