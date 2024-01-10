@@ -22,7 +22,7 @@
 
 h1 {
     font-weight: 900;
-    font-size: 15em;
+    font-size: 7em;
     margin-top: 100px;
     color: whitesmoke;
     text-shadow: 8px 8px darkslategrey;
@@ -61,7 +61,7 @@ ul{
 }
 .introduction
 {
-    font-size: 5em;
+    font-size: 3em;
     color: white;
     font-weight: 900;
     text-shadow: black 0px 0px 50px;
@@ -76,7 +76,7 @@ ul{
     padding: 25px;
 }
 .titrepartie{
-    font-size: 10em;
+    font-size: 6em;
     color: darkslategrey;
     text-shadow: 4px 4px white;
     display: flex;
@@ -85,12 +85,12 @@ ul{
 
 }
 p{
-    font-size: 3em;
+    font-size: 2em;
     padding: 5%;
 }
 #reseaux a img {
-    height: 10em;
-    width: 10em;
+    height: 5em;
+    width: 5em;
     margin: 0.5em;
 }
 #reseaux {
@@ -147,7 +147,7 @@ h4{
 
     h1 {
         font-weight: 900;
-        font-size: 9em;
+        font-size: 7em;
         margin-top: 100px;
         color: whitesmoke;
         text-shadow: 8px 8px darkslategrey;
