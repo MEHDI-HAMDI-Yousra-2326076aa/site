@@ -55,6 +55,11 @@ display: flex;
     margin: auto auto 100px;
     padding : 10%
 }
+#tableauJoueurs th {
+    padding: 5%;
+
+}
+
 #tableauJoueurs td {
 border: dotted black;
 
@@ -88,4 +93,11 @@ color: white;
 }
 #Magnus{
     order: 2;
+}
+@media screen and (max-width: 1200px){
+
+    #les3Meilleurs{
+        display: flex;
+        flex-direction: column;
+    }
 }
