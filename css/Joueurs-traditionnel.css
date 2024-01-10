@@ -1,6 +1,9 @@
 h1{
+
+
     display: flex;
     justify-content: center;
+
     font-weight: 900;
     font-size: 3em;
     margin-top: 100px;
@@ -8,7 +11,8 @@ h1{
     text-shadow: 2px 2px saddlebrown;
 }
 h2,h3,h4{
-    color: white;
+
+    white-space: nowrap;
     text-shadow: 2px 2px saddlebrown;
     font-size: 5vh;
     padding: 25px;
@@ -17,26 +21,24 @@ h2,h3,h4{
 
 section p:not(.introduction){
 
-    text-shadow: black 5px 5px;
     border-radius: 15px;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(244, 244, 244, 0.3);
     font-weight: 900;
     margin: auto;
     margin-bottom: 100px;
 }
 .introduction{
+    text-shadow: 0px 0px 100px white;
     display: flex;
     justify-content: center;
     font-size: 2em;
-    color: white;
     font-weight: 900;
-    text-shadow: black 0px 0px 50px;
+
     padding: 50px;
 
 }
 #presentation{
     margin-top: 5%;
-    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,25 +46,21 @@ section p:not(.introduction){
 }
 #tableauJoueurs {
 
-    color: white;
     display: flex;
     font-size: 2em;
     border: solid saddlebrown 2px;
     width: 60%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(244, 244, 244, 0.5);
     padding: 50px;
     border-radius: 15px;
     margin: auto auto 100px;
-    padding : 10%
 }
-#tableauJoueurs th {
-    padding: 5%;
-    width: 25%;
+#tableauJoueurs td {
+    border: solid beige;
+    padding: 6px;
 }
 
-#tableauJoueurs td {
-    border: dotted black;
-}
+
 
 
 table{
@@ -70,7 +68,7 @@ table{
 }
 #les3Meilleurs{
     margin-top: 10%;
-    color: white;
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -83,7 +81,7 @@ table{
     order: 1;
 }
 #Mehdi, #Magnus, #Wesley {
-    padding: 50px;
+    padding: 50px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,7 +98,7 @@ table{
         flex-direction: column;
     }
     #tableauJoueurs{
-        width: 90%;
+        width: 100%;
     }
     .photosMeilleurs{
         width: 50%;
@@ -110,29 +108,15 @@ table{
     }
 }
 @media screen and (max-width: 700px){
-
-    #les3Meilleurs{
-        display: flex;
-        flex-direction: column;
+    h1{
+        font-size: 2em;
     }
-    #tableauJoueurs{
-        width: 90%;
-    }
-    .photosMeilleurs{
-        width: 50%;
-
-    }
-    p{
-        font-size: 0.8em;
-    }
-    tr {
-        margin: 2em;
-
+    .introduction{
+        font-size: 1.5em;
     }
 }
-@media screen and (max-width: 400px){
-
-    p{
-        font-size: 0.5em;
+@media screen and (max-width: 480px){
+    #tableauJoueurs{
+        font-size: 1em;
     }
 }
