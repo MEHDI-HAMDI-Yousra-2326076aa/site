@@ -93,15 +93,14 @@ table{
     order: 2;
 }
 video{
-
-    display: none;
+    border-radius: 50px;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height:90%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
 
 }
 #md{
@@ -109,17 +108,27 @@ video{
 }
 #btnfermer{
     border: none;
-    background: white;
-    display: none;
     margin-top: 10px;
     cursor: pointer;
+    position: fixed;
+    top: 10%;
+    left: 4%;
+    display: none;
     z-index: 1000;
 }
-
 #btnfermer img{
-    background: white;
-    width: 50%;
-    height: 10%;
+    background: transparent;
+    position: fixed;
+    width: 5%;
+    height: auto;
+}
+#btnfermer img:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+#md:hover{
+    transition: 0.5s;
+    border: 2px solid white;
 }
 @media screen and (max-width: 1200px){
 

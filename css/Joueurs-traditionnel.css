@@ -122,11 +122,10 @@ video{
     height: auto;
 }
 #btnfermer img:hover{
-    transition: 0.3s;
+    transition: 0.4s;
     transform: scale(1.1);
 }
 #md:hover{
-    transition: 0.5s;
     border: 2px solid white;
 }
 @media screen and (max-width: 1200px){
