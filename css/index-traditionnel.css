@@ -1,4 +1,6 @@
-
+.image1{
+    display: none;
+}
 #changementTheme{
     position: fixed;
     top: 10px;
@@ -143,7 +145,7 @@ h4{
     font-weight: bold;
     padding: 1em;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px){
 
     h1 {
         font-weight: 900;
@@ -152,8 +154,66 @@ h4{
         color: whitesmoke;
         text-shadow: 8px 8px saddlebrown;
     }
+    .titrepartie{
+        /* demander au prof comment faire pour ça */
+        color: white;
+        text-shadow: 5px 5px saddlebrown;
+        font-size: 2em;
+        padding: 25px;
 
-    h2, h3, h4 {
+    }
+
+    .introduction{
+        font-size: 2em;
+        padding: 5%;
+
+    }
+    p{
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 1000px){
+
+    h1 {
+        font-weight: 900;
+        font-size: 4em;
+        margin-top: 100px;
+        color: whitesmoke;
+        text-shadow: 8px 8px saddlebrown
+    }
+    .titrepartie{
+        /* demander au prof comment faire pour ça */
+        color: white;
+        text-shadow: 5px 5px saddlebrown;
+        font-size: 2em;
+        padding: 25px;
+
+    }
+
+    .introduction{
+        font-size: 2em;
+        padding: 5%;
+
+    }
+    p{
+        font-size: 1.5em;
+    }
+    #reseaux a img {
+        height: 3em;
+        width: 3em;
+        margin: 0.5em;
+    }
+}
+@media screen and (max-width: 670px){
+
+    h1 {
+        font-weight: 900;
+        font-size: 3em;
+        margin-top: 100px;
+        color: whitesmoke;
+        text-shadow: 8px 8px saddlebrown;
+    }
+    h2,h3,h4{
         /* demander au prof comment faire pour ça */
         color: white;
         text-shadow: 5px 5px saddlebrown;
@@ -162,12 +222,17 @@ h4{
 
     }
 
-    p {
-        font-size: 2em;
+    .introduction{
+        font-size: 1em;
         padding: 5%;
 
     }
+    p{
+        font-size: 1.5em;
+    }
+    #reseaux a img {
+        height: 0.5em;
+        width: 0.5em;
+        margin: 0.5em;
+    }
 }
-
-
-

@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Présentation des meilleurs joueurs dont le magnifique SEBBAK Mehdi">
+
     <title> Meilleurs Joueurs </title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/Joueurs.css">
+    <link rel="stylesheet" href="../css/style-tradtionelle.css">
+    <link rel="stylesheet" href="../css/Joueurs-traditionnel.css">
     <link rel="shortcut icon" href="../favicone/favicon-96x96.png">
     <script src="../js/main.js" defer></script>
 </head>
@@ -26,7 +28,7 @@
     <ul class="menuDeroulantActif">
         <li ><a href="index.html">Presentation</a></li>
         <li ><a href="Apprendre.html" > Apprendre</a></li>
-        <li ><a class="actual" href="Joueurs.html">Joueurs</a></li>
+        <li ><a class="actual" href="#">Joueurs</a></li>
         <li ><a href="contacts.html">Contacts</a></li>
     </ul>
     <section id="presentation" >
@@ -34,27 +36,30 @@
         <p class="introduction"> Vous allez découvir ici les joueurs les plus compétents de ce magnifique jeu </p>
         <p> Il est important de noter d'abord qu'aux Echecs c'est un système de points que l'on nomme ELO qui permet de connaitre le niveau d'un joueur. Plus celui-ci est élevé plus le joueur est bon</p>
     </section>
-    <img id="logo" src="https://www.chess.com/bundles/web/images/brand/chesscom_pawn.5dfdea51.png" alt="logo de chess.com">
-
+    <img class="logo logo1" src="https://www.chess.com/bundles/web/images/brand/chesscom_pawn.5dfdea51.png" alt="logo de chess.com">
+    <img class="logo logo2" src="https://cdn-icons-png.flaticon.com/512/5462/5462881.png" alt="favicon du code">
 
 </header>
 <main>
 
     <table id="tableauJoueurs">
         <th>  Noms  </th><th>  Age  </th><th>  ELO  </th><th>  Nationalité  </th>
-        <tr><td>Magnus Carlsen</td><td>30</td><td>2847</td><td><img src="../drapeauxPays/no.png"></td></tr>
-        <tr><td>Wesley So</td><td>27</td><td>2770</td><td><img src="../drapeauxPays/ph.png"></td></tr>
-        <tr><td>Fabiano Caruana</td><td>28</td><td>2767</td><td><img src="../drapeauxPays/us.png"></td></tr>
-        <tr><td>Ding Liren</td><td>28</td><td>2760</td><td><img src="../drapeauxPays/cn.png"></td></tr>
-        <tr><td>Maxime Vachier-Lagrave</td><td>30</td><td>2758</td><td><img src="../drapeauxPays/fr.png"></td></tr>
-        <tr><td>Levon Aronian</td><td>38</td><td>2758</td><td><img src="../drapeauxPays/am.png"></td></tr>
-        <tr><td>Shakhriyar Mamedyarov</td><td>36</td><td>2756</td><td><img src="../drapeauxPays/az.png"></td></tr>
-        <tr><td>Teimour Radjabov</td><td>33</td><td>2756</td><td><img src="../drapeauxPays/az.png"></td></tr>
+        <tr><td>Magnus Carlsen</td><td>30</td><td>2847</td><td><img src="../drapeauxPays/no.png" alt="drapeau Norvège"></td></tr>
+        <tr><td>Wesley So</td><td>27</td><td>2770</td><td><img src="../drapeauxPays/ph.png" alt="drapeau Philipinnes"></td></tr>
+        <tr><td>Fabiano Caruana</td><td>28</td><td>2767</td><td><img src="../drapeauxPays/us.png" alt="drapeau USA"></td></tr>
+        <tr><td>Ding Liren</td><td>28</td><td>2760</td><td><img src="../drapeauxPays/cn.png" alt="drapeau Chine"></td></tr>
+        <tr><td>Maxime Vachier-Lagrave</td><td>30</td><td>2758</td><td><img src="../drapeauxPays/fr.png" alt="Drapeau Arménie"></td></tr>
+        <tr><td>Levon Aronian</td><td>38</td><td>2758</td><td><img src="../drapeauxPays/am.png" alt="Drapeau Arménie"></td></tr>
+        <tr><td>Shakhriyar Mamedyarov</td><td>36</td><td>2756</td><td><img src="../drapeauxPays/az.png" alt="Drapeau Azerbaïdjan"></td></tr>
+        <tr><td>Teimour Radjabov</td><td>33</td><td>2756</td><td><img src="../drapeauxPays/az.png" alt="Drapeau Azerbaïdjan"></td></tr>
 
     </table>
     <p class="introduction"> Nous allons désormais nous concentrer sur les 3 meilleurs joueurs d'Echecs et leur histoire</p>
     <section id="les3Meilleurs" >
         <section id="Mehdi">
+            <h2> Mehdi SEBBAK </h2>
+            <img class="photosMeilleurs" src="../PhotosDesMeilleursJoueurs/happy_mehdi.jpg" alt="photo de Mehdi Sebbak">
+            <p> Ce bel homme Français est considéré dans le milieu comme le plus fort du domaine des Echecs, malgré le fait qu'il ne figure pas dans le classement élo par modestie, il prouva à de multiples reprises qu'il est le meilleur. De plus il est vraiment très aimable.</p>
         <h2> Mehdi SEBBAK </h2>
         <a href="#video"><img class="photosMeilleurs" id="md" src="../PhotosDesMeilleursJoueurs/happy_mehdi.jpg" alt="photo de Mehdi Sebbak" onclick="ouvrir()"></a>
             <button onclick="fermer()" id="btnfermer"><img src="../assets/quitter.jpeg"></button>
@@ -65,15 +70,15 @@
             </video>
         </section>
         <section id="Magnus">
-           <h3> Magnus CARLSEN </h3>
-        <img class="photosMeilleurs" src="../PhotosDesMeilleursJoueurs/5081.webp" alt="photo de Magnus Carlsen">
-        <p> Magnus Carlsen est un joueur d'échecs norvégien né le 30 novembre 1990 à Tønsberg. Il a remporté le championnat du monde plusieurs fois. Il est considéré comme le meilleur joueur d'échecs derrière le grand SEBBAK Mehdi.</p>
+            <h3> Magnus CARLSEN </h3>
+            <img class="photosMeilleurs" src="../PhotosDesMeilleursJoueurs/5081.webp" alt="photo de Magnus Carlsen">
+            <p> Magnus Carlsen est un joueur d'échecs norvégien né le 30 novembre 1990 à Tønsberg. Il a remporté le championnat du monde plusieurs fois. Il est considéré comme le meilleur joueur d'échecs derrière le grand SEBBAK Mehdi.</p>
         </section>
         <section id="Wesley">
-        <h4> Wesley SO</h4>
-        <img class="photosMeilleurs" src="../PhotosDesMeilleursJoueurs/Wesley_So,_2015.jpg" alt="photo de Wesley So">
-        <p> Wesley So est un joueur d'échecs américano-philippin né le 9 octobre 1993 à Bacoor. Il a obtenu le titre de grand maître international en 2008. Il a remporté le championnat des États-Unis en 2017 et 2020 et le championnat du monde d'échecs en 2021.
-</section>
+            <h4> Wesley SO</h4>
+            <img class="photosMeilleurs" src="../PhotosDesMeilleursJoueurs/Wesley_So,_2015.jpg" alt="photo de Wesley So">
+            <p> Wesley So est un joueur d'échecs américano-philippin né le 9 octobre 1993 à Bacoor. Il a obtenu le titre de grand maître international en 2008. Il a remporté le championnat des États-Unis en 2017 et 2020 et le championnat du monde d'échecs en 2021.
+        </section>
     </section>
 
 </main>
