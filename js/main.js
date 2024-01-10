@@ -37,13 +37,17 @@ function myalert() {
 }
 function ouvrir() {
     let videoContainer = document.getElementById('video');
-
     videoContainer.style.display = 'block';
+    let btnFermer = document.getElementById('btnfermer');
+    btnFermer.style.display = 'block';
+    video.play();
 }
 function fermer() {
     let videoContainer = document.getElementById('video');
-
     videoContainer.style.display = 'none';
+    video.pause();
+    let btnFermer = document.getElementById('btnfermer');
+    btnFermer.style.display = 'none';
 }
 if(document.getElementById('btnfermer')) document.getElementById('btnfermer').addEventListener('click',fermer);
 
