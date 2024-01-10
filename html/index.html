@@ -4,23 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> ChessBoard </title>
+    <title> Chess </title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/index.css">
-    <link href="favicone/favicon-96x96.png" rel="shortcut icon" type="image/png"/>
+    <link href=/ rel="shortcut icon" type="image/png"/>
+    <link rel="shortcut icon" href="../favicone/favicon-96x96.png">
+    <script src="../js/main.js" defer></script>
+
+
 </head>
+
 <body>
 <header>
-    <button id="theme"><img class="theme" src="../assets/convert.png" alt="change de tème"></button>
+    <button id="changementTheme"><img class="theme" src="../assets/convert.png" alt="change de tème"></button>
     <h1> Les Échecs </h1>
     <nav>
         <ul class="menu">
-            <li><a id="actual">Presentation</a></li>
+            <li><a class="actual">Presentation</a></li>
             <li><a href="Apprendre.html"> Apprendre</a></li>
-            <li><a href="Achats.html">Achats</a></li>
+            <li><a href="Joueurs.html"> Joueurs</a></li>
             <li><a href="contacts.html">Contacts</a></li>
         </ul>
     </nav>
+    <img class=menuHamburger src="https://cdn-icons-png.flaticon.com/512/54/54630.png" alt="menu déroulant" >
+    <ul class="menuDeroulantActif">
+        <li ><a class="actual">Presentation</a></li>
+        <li ><a href="Apprendre.html" > Apprendre</a></li>
+        <li ><a href="Joueurs.html">Joueurs</a></li>
+        <li ><a href="contacts.html">Contacts</a></li>
+    </ul>
     <img id="logo" src="https://www.chess.com/bundles/web/images/brand/chesscom_pawn.5dfdea51.png" alt="logo de chess.com">
 
 </header>
@@ -51,9 +63,9 @@
         Il est pratiqué par des millions de gens sous de multiples formes : en famille, entre amis, dans des lieux publics, en club, en tournoi, par correspondance, contre des machines spécialisées, entre ordinateurs, entre programmes, sur Internet, aux niveaux amateur et professionnel. Depuis son introduction en Europe, le jeu d'échecs jouit d'un prestige et d'une aura particulière qui du « jeu des rois » l'a fait devenir peu à peu « le roi des jeux » ou encore « le noble jeu », en référence à sa dimension tactique et à sa notoriété mondiale. Il a très largement inspiré la culture, en particulier la peinture, la littérature et le cinéma.
     </p>
     </section>
-    <h4 class="titrepartie">Compétition</h4>
+
 <section id=" Competition">
-    
+    <h4 class="titrepartie">Compétition</h4>
     <img id="photoCompétition" src="https://www.leparisien.fr/resizer/Q-sZA-s2w5ksia_e6c1Yntv_qbY=/932x582/cloudfront-eu-central-1.images.arcpublishing.com/leparisien/LUGIXOVTUVAENP3L4VHRVAAWD4.jpg" alt="Compétition d'Echecs">
     <p> La compétition aux échecs existe depuis les origines. On en trouve trace à la cour d'Hâroun ar-Rachîd au VIIIe siècle. Le premier tournoi de l'ère moderne a lieu à Londres lors de l'Exposition universelle de 1851. La compétition est régie par la Fédération internationale des échecs (FIDE). Parallèlement, l'Association of Chess Professionals défend les intérêts des joueurs professionnels. Le premier champion du monde d'échecs est Wilhelm Steinitz en 1886 ; le champion en titre est le Chinois Ding Liren depuis 2023.
 

@@ -1,13 +1,15 @@
 
-#theme{
-    display: flex;
-    justify-content: flex-start;
+#changementTheme{
+    position: fixed;
+    top: 10px;
+    right: 100px;
     margin: 0.5em;
     border-radius: 15%;
     padding: 1em;
     height: 1em;
     width: 1em;
     cursor: pointer;
+    z-index: 5001;
 }
 .theme{
     top:0;
@@ -68,6 +70,7 @@ ul{
     padding: 25%;
     align-items: flex-end;
 }
+
 #histoire {
     align-items: center;
     padding: 25px;
@@ -76,6 +79,8 @@ ul{
     font-size: 10em;
     color: darkslategrey;
     text-shadow: 4px 4px white;
+    display: flex;
+    justify-content: center;
 
 
 }
@@ -102,23 +107,7 @@ p{
     justify-content: center;
     margin: 1em 0;
 }
-.evenements li a{
-    color: white;
-    font-weight: bold;
-    font-style: normal;
-}
-.evenements li a:hover{
-    color: darkslategray;
-}
-.evenements li{
-    padding: 2em;
-}
-.evenements{
-    padding: 2em;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-}
+
 #description {
     display: flex;
     flex-direction: column;
@@ -145,9 +134,7 @@ section p:not(.introduction) {
     margin: 0 auto;
     font-weight: 900;
 }
-header{
 
-}
 img{
     border-radius: 5px;
     margin-bottom: 10px;
@@ -155,4 +142,34 @@ img{
 h4{
     font-weight: bold;
     padding: 1em;
+}
+@media screen and (max-width: 1200px){
+
+    h1 {
+        font-weight: 900;
+        font-size: 10em;
+        margin-top: 100px;
+        color: whitesmoke;
+        text-shadow: 8px 8px darkslategrey;
+    }
+    h2,h3,h4{
+        /* demander au prof comment faire pour ça */
+        color: white;
+        text-shadow: 5px 5px darkslategrey;
+        font-size: 3vh;
+        padding: 25px;
+
+    }
+
+    p{
+        font-size: 2em;
+        padding: 5%;
+
+    }
+
+
+
+
+
+
 }
