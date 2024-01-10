@@ -1,55 +1,4 @@
 
-* {
-    font-family: "Candara Light";
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-}
-html{
-    background-image: url("https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/PedroPinhata/php6wV0bn.png");;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    height: 100%;
-}
-
-
-
-.menu li a {
-    color: white;
-    font-weight: bold;
-    border-radius: 15px;
-    padding: 0.3em;
-    transition: 300ms ease-in-out;
-}
-.menu li p {
-    color: white;
-    font-weight: bold;
-    border-radius: 15px;
-    padding: 0.3em;
-}
-
-.menu li a:hover {
-    display: block;
-    color: black;
-    background: lightseagreen;
-    transform: scale(1.1);
-
-}
-
-a{
-    color: darkslategrey;
-}
-a:hover{
-    color: black;
-}
-ul{
-
-    margin: 0 3em;
-    border-radius: 8px;
-}
 
 h1 {
     font-weight: 900;
@@ -62,11 +11,12 @@ body {
     color: white;
     text-align: center;
     height: fit-content;
+    display: flex;
+    flex-direction: column;
 }
 /* css page contact*/
-.contact h2{
+h2{
     animation: contacts 1s ease;
-    padding: 1em;
 }
 .contact{
     animation: contacts 1s ease;
@@ -79,10 +29,7 @@ body {
     margin-bottom: 2em;
     padding: 3em;
     backdrop-filter: blur(2px);
-
-    background-size: cover;
-    height: 50%;
-    width: 20%;
+    width: 30%;
     border: 3px solid white;
     border-radius: 15px;
 }
@@ -91,14 +38,7 @@ body {
     border-radius: 15px;
     padding-left: 2em;
 }
-.contacts{
-    margin-top: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: .6s;
-}
+
 .plus{
     display:flex;
     flex-direction: column;
@@ -117,23 +57,37 @@ body {
     }
 }
 .entrer{
+    border: none;
+    outline: none;
     display: flex;
-    justify-self: flex-start;
     width: 100%;
     height: 3em;
     background-color: rgb(236, 244, 244);
     border-radius: 15px;
     padding-left: 2em;
-    padding-inline: 3em;
-    transform:translate(-45px,0);
+
+}
+.entrer:focus{
+    border: 2px solid darkslategray;
+}
+textarea:focus{
+    border: 2px solid darkslategray;
 }
 .label{
+    border: none;
+    outline: none;
     display: flex;
     justify-content: center;
     margin: 1em 0;
     padding-bottom: 0.5em;
     color: darkslategray;
     font-weight: bold;
+}
+textarea::placeholder{
+    color: black;
+    margin: 1em;
+    padding-top: 1em;
+    text-align: center;
 }
 #envoyer{
     cursor: pointer;
@@ -160,8 +114,7 @@ body {
     justify-content: space-between;
 }
 h3{
-    font-family: "Comic Sans MS";
-    font-weight: 600;
+    font-weight: bold;
     color: white;
     padding: 0.5em;
     margin-bottom: 2em;
@@ -176,6 +129,7 @@ h3{
     color: black;
     background-color: white;
     object-fit: fill;
+    font-weight: bold;
 }
 .plus ul{
     animation: plus 1s ease-in-out;
@@ -227,4 +181,82 @@ h3{
 .detail{
     display: flex;
     flex-direction: column;
+}
+.surnous a{
+    color: white;
+}
+.surnous a::after{
+    bottom: -5px;
+    display: flex;
+    right: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: darkslategray;
+    transition: 0.5s;
+}
+.surnous a:hover::after{
+    width: 100%;
+}
+@media (max-width: 1000px){
+    h1{
+        font-size: 4em;
+    }
+    h2{
+        margin-bottom: 1em;
+    }
+    .contact{
+        width: 50%;
+        margin: 3em;
+        padding: 2em;
+        font-size: 1em   ;
+    }
+
+    .entrer{
+        width: 70%;
+        height: 2em;
+        margin: 1em 0;
+    }
+    .label,textarea {
+        margin: 0.1em 0;
+        padding-bottom: 0.1em;
+    }
+}
+@media (max-width: 670px) {
+    h2 {
+        font-size: 1em;
+    }
+
+    .contact {
+        width: 100%;
+        display: grid;
+        border: none;
+        justify-content: space-between;
+        backdrop-filter: blur(0px);
+    }
+
+    .entrer {
+        margin: 0 1em;
+    }
+
+    textarea {
+        margin: 0 1em;
+    }
+
+    .surnous {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 450px){
+    h1{
+        font-size: 2em;
+    }
+
+}
+@media (max-width: 230px){
+    h1{
+        font-size: 1em;
+    }
 }
