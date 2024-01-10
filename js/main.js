@@ -1,4 +1,4 @@
-document.getElementById('envoyer').addEventListener('click', function (e) {
+if(document.getElementById('envoyer')) document.getElementById('envoyer').addEventListener('click', function (e) {
     e.preventDefault();
 
     const email = document.getElementById('email');
