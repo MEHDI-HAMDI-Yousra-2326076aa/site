@@ -1,4 +1,3 @@
-
 * {
     font-family: "Candara Light", serif;
     margin: 0;
@@ -10,17 +9,16 @@
 
 
 html{
-    background-image: url("https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/PedroPinhata/php6wV0bn.png");
+    background-image: url("https://static9.depositphotos.com/1177973/1132/i/450/depositphotos_11320421-stock-photo-chess-board-with-chess-pieces.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     height: 100%;
 }
-.logo2{
+.logo1{
     display: none;
 }
-
 .logo{
     animation: rotation 5s infinite linear;
     width: 3em;
@@ -52,7 +50,7 @@ html{
     z-index: 5000;
     width: 100%;
     margin: 0;
-    background: darkslategrey;
+    background: saddlebrown;
 }
 .menu li a {
     font-size: 0.7em;
@@ -73,7 +71,7 @@ html{
 .menu li a:hover {
     display: block;
     color: black;
-    background: lightseagreen;
+    background: sandybrown;
     transform: scale(1.1);
 
 }
@@ -82,7 +80,7 @@ html{
     color: white;
     font-weight: bold;
     text-decoration: none;
-    background: cadetblue;
+    background: sandybrown;
     border-radius: 15px;
 }
 .menuHamburger {
@@ -95,8 +93,8 @@ html{
 }
 @media only screen and (max-width: 1200px) {
 
- .menu {
-display: none;
+    .menu {
+        display: none;
     }
     .menuDeroulantActif{
 
@@ -107,7 +105,7 @@ display: none;
         height:  10em;
         width: 100%;
 
-        background: rgba(47, 79, 79, 0.9);
+        background: rgba(37,17, 2, 0.9);
         position: fixed;
         top: 0;
         z-index: 5000;
@@ -128,7 +126,7 @@ display: none;
     .menuDeroulantActif li a:hover {
 
         color: black;
-        background: lightseagreen;
+        background: rosybrown;
         transform: scale(1.1);
 
     }
