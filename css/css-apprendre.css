@@ -1,3 +1,6 @@
+header{
+    width: 100%;
+}
 p {
     font-size: 2em;
 }
@@ -19,7 +22,7 @@ h1 {
     font-size: 6em;
     margin-top: 100px;
     color: whitesmoke;
-    text-shadow: 8px 8px darkslategrey;
+    text-shadow: 4px 4px darkslategrey;
 }
 body {
     color: white;
@@ -132,7 +135,7 @@ h4{
     color: white;
 }
 
-.tuto iframe{
+.tuto video{
     width:560px;
     height: 315px;
 }
@@ -181,6 +184,11 @@ h4{
     }
 }
 @media (max-width: 670px) {
+
+    .tuto video {
+        width: 70%;
+        height: 70%;
+    }
     h2 {
         font-size: 1em;
     }

@@ -18,6 +18,9 @@ h2,h3,h4,h5{
     padding: 25px;
 
 }
+header{
+    width: 100%;
+}
 
 section p:not(.introduction){
 
@@ -75,6 +78,7 @@ table{
     font-size: 2em;
 
 }
+
 .photosMeilleurs{
     width: 50vh;
     border-radius: 500px;
@@ -160,7 +164,24 @@ video{
     }
 }
 @media screen and (max-width: 480px){
+    h1{
+        font-size: 1.5em;
+    }
     #tableauJoueurs{
         font-size: 1em;
+    }
+
+    #Magnus, #Mehdi, #Wesley{
+
+        p{
+            font-size: 0.5em;
+        }
+
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .introduction{
+        font-size: 0.8em;
     }
 }

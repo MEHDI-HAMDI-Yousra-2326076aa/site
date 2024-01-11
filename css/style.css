@@ -17,6 +17,9 @@ html{
     background-position: center;
     height: 100%;
 }
+header{
+    width: 100%;
+}
 #changementTheme{
     background-color: saddlebrown;
     position: fixed;
@@ -149,6 +152,11 @@ display: none;
     .mobile-menu{
         margin-top: 0;
         margin-left: 0;
+    }
+
+    #changementTheme{
+
+        right: 63px;
     }
 
 

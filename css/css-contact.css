@@ -5,7 +5,10 @@ h1 {
     font-size: 6em;
     margin-top: 100px;
     color: whitesmoke;
-    text-shadow: 8px 8px darkslategrey;
+    text-shadow: 2px 2px darkslategrey;
+}
+header{
+    width: 100%;
 }
 body {
     color: white;
@@ -78,14 +81,14 @@ textarea:focus{
     outline: none;
     display: flex;
     justify-content: center;
-    margin: 1em 0;
+    margin: auto;
     padding-bottom: 0.5em;
     color: darkslategray;
     font-weight: bold;
 }
 textarea::placeholder{
     color: black;
-    margin: 1em;
+    margin: auto;
     padding-top: 1em;
     text-align: center;
 }
@@ -200,6 +203,7 @@ h3{
     width: 100%;
 }
 @media (max-width: 1000px){
+
     h1{
         font-size: 4em;
     }
@@ -216,7 +220,7 @@ h3{
     .entrer{
         width: 70%;
         height: 2em;
-        margin: 1em 0;
+        margin: auto;
     }
     .label,textarea {
         margin: 0.1em 0;
@@ -227,9 +231,10 @@ h3{
     h2 {
         font-size: 1em;
     }
-
     .contact {
-        width: 100%;
+        padding-left: 0;
+        margin-right: 0;
+        width: 70%;
         display: flex;
         border: none;
         justify-content: center;
@@ -237,11 +242,11 @@ h3{
     }
 
     .entrer {
-        margin: 0 1em;
+        margin: auto;
     }
 
     textarea {
-        margin: 0 1em;
+        margin: auto;
     }
 
     .surnous {
