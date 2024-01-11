@@ -78,14 +78,14 @@ textarea:focus{
     outline: none;
     display: flex;
     justify-content: center;
-    margin: 1em 0;
+    margin: auto;
     padding-bottom: 0.5em;
     color: darkslategray;
     font-weight: bold;
 }
 textarea::placeholder{
     color: black;
-    margin: 1em;
+    margin: auto;
     padding-top: 1em;
     text-align: center;
 }
@@ -216,7 +216,7 @@ h3{
     .entrer{
         width: 70%;
         height: 2em;
-        margin: 1em 0;
+        margin: auto;
     }
     .label,textarea {
         margin: 0.1em 0;
@@ -237,11 +237,11 @@ h3{
     }
 
     .entrer {
-        margin: 0 1em;
+        margin: auto;
     }
 
     textarea {
-        margin: 0 1em;
+        margin: auto;
     }
 
     .surnous {
