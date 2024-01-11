@@ -7,6 +7,9 @@ h1 {
     color: whitesmoke;
     text-shadow: 8px 8px darkslategrey;
 }
+header{
+    width: 100%;
+}
 body {
     color: white;
     text-align: center;

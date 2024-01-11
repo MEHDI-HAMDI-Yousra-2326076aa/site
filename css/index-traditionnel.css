@@ -1,6 +1,9 @@
 .image1{
     display: none;
 }
+header{
+    width: 100%;
+}
 
 .theme{
     top:0;

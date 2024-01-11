@@ -17,6 +17,9 @@ html{
     background-position: center;
     height: 100%;
 }
+header{
+    width: 100%;
+}
 #changementTheme{
     background-color: saddlebrown;
     position: fixed;

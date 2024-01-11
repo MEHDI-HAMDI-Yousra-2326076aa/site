@@ -9,6 +9,9 @@
     height: 2em;
     width: 2em;
 }
+header{
+    width: 100%;
+}
 
 h1 {
     font-weight: 900;

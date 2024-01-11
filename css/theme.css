@@ -16,7 +16,9 @@ html{
     background-position: center;
     height: 100%;
 }
-
+header{
+    width: 100%;
+}
 #logo{
     animation: rotation 5s infinite linear;
     width: 5em;
