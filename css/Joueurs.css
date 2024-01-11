@@ -93,30 +93,42 @@ table{
     order: 2;
 }
 video{
-
-     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    border-radius: 50px;
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height:90%;
     background: rgba(0, 0, 0, 0.7);
     display: none;
+
 }
 #md{
     cursor: pointer;
 }
 #btnfermer{
     border: none;
-    background: transparent;
-    display: block;
     margin-top: 10px;
     cursor: pointer;
+    position: fixed;
+    top: 10%;
+    left: 4%;
+    display: none;
+    z-index: 1000;
 }
 #btnfermer img{
     background: transparent;
-    
     position: fixed;
-    width: 10%;
+    width: 5%;
+    height: auto;
+}
+#btnfermer img:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+#md:hover{
+    transition: 0.5s;
+    border: 2px solid white;
 }
 @media screen and (max-width: 1200px){
 

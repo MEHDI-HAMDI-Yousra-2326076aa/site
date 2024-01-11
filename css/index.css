@@ -224,3 +224,9 @@ h4{
         margin: 0.5em;
     }
 }
+.image2{
+    padding : 10px;
+}
+h5{
+    display: none;
+}

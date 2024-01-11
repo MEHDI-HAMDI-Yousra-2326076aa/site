@@ -10,7 +10,7 @@ h1{
     color: whitesmoke;
     text-shadow: 2px 2px saddlebrown;
 }
-h2,h3,h4{
+h2,h3,h4,h5{
 
     white-space: nowrap;
     text-shadow: 2px 2px saddlebrown;
@@ -90,6 +90,50 @@ table{
 }
 #Magnus{
     order: 2;
+}
+video{
+    border-radius: 50px;
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height:90%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+
+}
+#md{
+    cursor: pointer;
+}
+#btnfermer{
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    position: fixed;
+    top: 10%;
+    left: 4%;
+    display: none;
+    z-index: 1000;
+}
+#btnfermer img{
+    background: transparent;
+    position: fixed;
+    width: 5%;
+    height: auto;
+}
+#btnfermer img:hover{
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+#md:hover{
+    border: 2px solid white;
+}
+#les3Meilleurs h2{
+    top: -10%;
+    transform: translateX(-100%);
+    position: absolute;
+    display: flex;
+    align-self: center;
 }
 @media screen and (max-width: 1200px){
 
