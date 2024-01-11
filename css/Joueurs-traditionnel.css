@@ -164,7 +164,24 @@ video{
     }
 }
 @media screen and (max-width: 480px){
+    h1{
+        font-size: 1.5em;
+    }
     #tableauJoueurs{
         font-size: 1em;
+    }
+
+    #Magnus, #Mehdi, #Wesley{
+
+        p{
+            font-size: 0.7em;
+        }
+
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .introduction{
+        font-size: 0.8em;
     }
 }

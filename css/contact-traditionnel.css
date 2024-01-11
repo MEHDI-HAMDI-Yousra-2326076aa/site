@@ -5,7 +5,7 @@ h1 {
     font-size: 6em;
     margin-top: 100px;
     color: whitesmoke;
-    text-shadow: 8px 8px saddlebrown;
+    text-shadow: 2px 2px saddlebrown;
 }
 header{
     width: 100%;
@@ -231,8 +231,11 @@ h3{
         font-size: 1em;
     }
 
+
     .contact {
-        width: 100%;
+        padding-left: 0;
+        margin-right: 0;
+        width: 70%;
         display: flex;
         border: none;
         justify-content: center;
