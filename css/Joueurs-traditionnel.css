@@ -171,12 +171,11 @@ video{
         font-size: 1em;
     }
 
-    #Magnus, #Mehdi, #Wesley{
+    #Magnus p, #Mehdi p, #Wesley p {
+        font-size: 0.5em;
+    }
 
-        p{
-            font-size: 0.5em;
-        }
-
+    #Magnus, #Mehdi, #Wesley {
         width: 100%;
         padding-right: 0;
         padding-left: 0;
