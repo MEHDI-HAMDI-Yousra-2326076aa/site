@@ -1,3 +1,5 @@
+<!-- fonction qui s'occupe de la validation du formulaire de contact -->
+
 if (document.getElementById('envoyer')) document.getElementById('envoyer').addEventListener('click', function (e) {
     e.preventDefault();
 
@@ -7,7 +9,7 @@ if (document.getElementById('envoyer')) document.getElementById('envoyer').addEv
 
     const bodymessage = `Email : ${email.value}<br> Subject: ${subject.value}<br> Message: ${mess.value}`;
 
-    Email.send({
+    email.send({
         Host: "smtp.elasticemail.com",
         Username: "chessweb7@gmail.com",
         Password: "8E95DF2BFE4225A64EC31EBB47EC0777DCB9",
@@ -16,26 +18,19 @@ if (document.getElementById('envoyer')) document.getElementById('envoyer').addEv
         From: document.getElementById("email").value,
         Subject: subject.value,
         Body: bodymessage
-    }).then(
-        message => {
-            alert(message);
-            myalert();
-        }
-    );
+    }).then(message => {
+        alert(message);
+        myalert();
+    });
 });
 
-if (document.getElementById('theme')) document.getElementById('theme').addEventListener('click', function () {
-    css = document.getElementById('css');
-    if (css.href.endsWith("/css/theme.css")) {
-        css.href = 'css/style.css'
-    } else {
-        css.href = 'css/theme.css';
-    }
-});
+// fonction qui envoie un retour à l'utilisateur lorsque le message est envoyé
 
 function myalert() {
     alert("Merci pour votre retour !");
 }
+
+//fonctions qui permet d'ouvrir la vidéo et la fermer en cliquant sur la croix
 
 function ouvrir() {
     let videoContainer = document.getElementById('video');
@@ -56,6 +51,8 @@ function fermer() {
 if (document.getElementById('btnfermer')) document.getElementById('btnfermer').addEventListener('click', fermer);
 
 
+//fonction qui permet de faire apparaitre le menu déroulant en cliquant sur le hamburger
+
 const menuHamburger = document.querySelector(".menuHamburger");
 const menu = document.querySelector('.menuDeroulantActif');
 
@@ -65,19 +62,20 @@ if (menuHamburger) {
 
     });
 }
+//fonction qui permet de changer le thème du site vers le thème traditionnel ou classique
+
 document.getElementById('changementTheme').addEventListener('click', function () {
-        var classique = document.querySelectorAll('.classique');
-        var traditionnel = document.querySelectorAll('.traditionnel');
-        classique.forEach((element,index) => {
+    var classique = document.querySelectorAll('.classique');
+    var traditionnel = document.querySelectorAll('.traditionnel');
+    classique.forEach((element, index) => {
 
-            if (element.disabled) {
-                element.disabled = false;
-                traditionnel[index].disabled = true;
-            } else {
-                element.disabled = true;
-                traditionnel[index].disabled = false;
-            }
-        });
+        if (element.disabled) {
+            element.disabled = false;
+            traditionnel[index].disabled = true;
+        } else {
+            element.disabled = true;
+            traditionnel[index].disabled = false;
+        }
+    });
 
-    }
-);
+});

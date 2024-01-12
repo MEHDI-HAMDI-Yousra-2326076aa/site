@@ -1,6 +1,5 @@
-h1{
-
-
+/*Gère l'affichage des différents titres*/
+h1 {
     display: flex;
     justify-content: center;
 
@@ -10,7 +9,8 @@ h1{
     color: whitesmoke;
     text-shadow: 2px 2px darkslategrey;
 }
-h2,h3,h4,h5{
+
+h2, h3, h4, h5 {
     color: white;
     white-space: nowrap;
     text-shadow: 2px 2px darkslategrey;
@@ -18,7 +18,8 @@ h2,h3,h4,h5{
     padding: 25px;
 
 }
-header{
+
+header {
     width: 100%;
 }
 
@@ -30,7 +31,7 @@ p:not(.introduction) {
     margin: auto;
 }
 
-.introduction{
+.introduction {
     color: white;
     text-shadow: 0 0 100px white;
     display: flex;
@@ -41,13 +42,16 @@ p:not(.introduction) {
     padding: 50px;
 
 }
-#presentation{
+
+#presentation {
     margin-top: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 1em;
 }
+
+/*Gère l'affichage du tableau des joueurs*/
 #tableauJoueurs {
     font-size: 2em;
     color: white;
@@ -58,17 +62,17 @@ p:not(.introduction) {
     border-radius: 15px;
     margin: auto auto 100px;
 }
+
 #tableauJoueurs td {
     border: solid beige;
     padding: 6px;
 }
 
 
-
-
-table{
+table {
     justify-content: space-around;
 }
+
 #les3Meilleurs {
     margin-top: 10%;
     justify-content: space-around;
@@ -78,36 +82,42 @@ table{
     font-size: 2em;
 }
 
-.photosMeilleurs{
+/*Gère l'affichage des photos des joueurs avec leur présentation */
+.photosMeilleurs {
     width: 50vh;
     border-radius: 500px;
     order: 1;
 }
-#Mehdi, #Magnus, #Wesley{
+
+#Mehdi, #Magnus, #Wesley {
     color: white;
     padding: 50px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#Magnus{
+
+#Magnus {
     order: 2;
 }
-video{
+
+video {
     border-radius: 50px;
     position: fixed;
     top: 10%;
     left: 5%;
     width: 90%;
-    height:90%;
+    height: 90%;
     background: rgba(0, 0, 0, 0.7);
     display: none;
 
 }
-#md{
+
+#md {
     cursor: pointer;
 }
-#btnfermer{
+
+#btnfermer {
     border: none;
     margin-top: 10px;
     cursor: pointer;
@@ -117,55 +127,68 @@ video{
     display: none;
     z-index: 1000;
 }
-#btnfermer img{
+
+#btnfermer img {
     background: transparent;
     position: fixed;
     width: 5%;
     height: auto;
 }
-#btnfermer img:hover{
+
+#btnfermer img:hover {
     transition: 0.4s;
     transform: scale(1.1);
 }
-#md:hover{
+
+#md:hover {
     border: 2px solid white;
 }
-#les3Meilleurs h2{
+
+#les3Meilleurs h2 {
     top: -10%;
     transform: translateX(-100%);
     position: absolute;
     display: flex;
     align-self: center;
 }
-@media screen and (max-width: 1200px){
 
-    #les3Meilleurs{
+/*media queries*/
+@media screen and (max-width: 1200px) {
+
+    #les3Meilleurs {
         display: flex;
         flex-direction: column;
     }
-    #tableauJoueurs{
+
+    #tableauJoueurs {
         width: 100%;
     }
-    .photosMeilleurs{
+
+    .photosMeilleurs {
         width: 50%;
     }
-    p{
+
+    p {
         font-size: 1em;
     }
 }
-@media screen and (max-width: 700px){
-    h1{
+
+@media screen and (max-width: 700px) {
+    h1 {
         font-size: 2em;
     }
-    .introduction{
+
+    .introduction {
         font-size: 1.5em;
     }
 }
-@media screen and (max-width: 480px){
-    h1{
+
+@media screen and (max-width: 480px) {
+    h1 {
         font-size: 1.5em;
     }
-    #tableauJoueurs{
+
+    #tableauJoueurs {
         font-size: 1em;
     }
 
@@ -178,12 +201,14 @@ video{
         padding-right: 0;
         padding-left: 0;
     }
-    .introduction{
+
+    .introduction {
         font-size: 0.8em;
     }
 }
-@media screen and (max-width: 630px){
-    #tableauJoueurs{
+
+@media screen and (max-width: 630px) {
+    #tableauJoueurs {
         font-size: 1.5em;
     }
 }

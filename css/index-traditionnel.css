@@ -1,12 +1,13 @@
-.image1{
+.image1 {
     display: none;
 }
-header{
+
+header {
     width: 100%;
 }
 
-.theme{
-    top:0;
+.theme {
+    top: 0;
     display: flex;
     justify-content: flex-start;
     margin-right: 0.5em;
@@ -21,11 +22,13 @@ h1 {
     color: whitesmoke;
     text-shadow: 2px 2px saddlebrown;
 }
+
 body {
     color: white;
     text-align: center;
     height: fit-content;
 }
+
 footer {
     display: flex;
     flex-direction: column;
@@ -34,33 +37,37 @@ footer {
     gap: 3px;
     padding: 0.5em 0;
 }
-.stickers{
+
+.stickers {
     display: flex;
     margin-top: 20%;
     background-color: white;
     padding: 1em;
-    border-radius:2em;
+    border-radius: 2em;
 
 }
 
-a{
+a {
     color: saddlebrown;
 }
-a:hover{
+
+a:hover {
     color: black;
 }
-ul{
+
+ul {
     margin: 0 3em;
     border-radius: 8px;
 }
-.introduction
-{
+
+.introduction {
     font-size: 3em;
     color: white;
     font-weight: 900;
     text-shadow: black 0px 0px 50px;
 }
-#competition{
+
+#competition {
     padding: 25%;
     align-items: flex-end;
 }
@@ -69,7 +76,8 @@ ul{
     align-items: center;
     padding: 25px;
 }
-.titrepartie{
+
+.titrepartie {
     font-size: 6em;
     color: saddlebrown;
     text-shadow: 2px 2px white;
@@ -78,21 +86,25 @@ ul{
 
 
 }
-p{
+
+p {
     font-size: 2em;
     padding: 5%;
 }
+
 #reseaux a img {
     height: 5em;
     width: 5em;
     margin: 0.5em;
 }
+
 #reseaux {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
+
 #tuto main {
     display: flex;
     flex-direction: row;
@@ -108,36 +120,40 @@ p{
     height: 100%;
     gap: 1em;
 }
+
 #description img {
     align-self: center;
-    height : 25%;
+    height: 25%;
     width: 47%;
     border-radius: 15px;
 }
 
-#photoCompétition{
+#photoCompétition {
     width: 35%;
     height: 35%;
     border-radius: 15px;
 }
+
 section p:not(.introduction) {
-    text-shadow: black 2px 2px ;
+    text-shadow: black 2px 2px;
     border-radius: 15px;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     width: 50%;
     margin: 0 auto;
     font-weight: 900;
 }
 
-img{
+img {
     border-radius: 5px;
     margin-bottom: 10px;
 }
-h4{
+
+h4 {
     font-weight: bold;
     padding: 1em;
 }
-@media screen and (max-width: 1300px){
+
+@media screen and (max-width: 1300px) {
 
     h1 {
         font-weight: 900;
@@ -146,7 +162,8 @@ h4{
         color: whitesmoke;
         text-shadow: 4px 4px saddlebrown;
     }
-    .titrepartie{
+
+    .titrepartie {
         /* demander au prof comment faire pour ça */
         color: white;
         text-shadow: 3px 3px saddlebrown;
@@ -155,16 +172,18 @@ h4{
 
     }
 
-    .introduction{
+    .introduction {
         font-size: 2em;
         padding: 5%;
 
     }
-    p{
+
+    p {
         font-size: 1em;
     }
 }
-@media screen and (max-width: 1000px){
+
+@media screen and (max-width: 1000px) {
 
     h1 {
         font-weight: 900;
@@ -173,7 +192,8 @@ h4{
         color: whitesmoke;
         text-shadow: 3px 3px saddlebrown;
     }
-    .titrepartie{
+
+    .titrepartie {
 
         color: white;
         font-size: 2em;
@@ -181,21 +201,24 @@ h4{
 
     }
 
-    .introduction{
+    .introduction {
         font-size: 2em;
         padding: 5%;
 
     }
-    p{
+
+    p {
         font-size: 1em;
     }
+
     #reseaux a img {
         height: 3em;
         width: 3em;
         margin: 0.5em;
     }
 }
-@media screen and (max-width: 670px){
+
+@media screen and (max-width: 670px) {
 
     section p:not(.introduction) {
 
@@ -209,7 +232,8 @@ h4{
         color: whitesmoke;
         text-shadow: 4px 4px saddlebrown;
     }
-    h2,h3,h4{
+
+    h2, h3, h4 {
         /* demander au prof comment faire pour ça */
         color: white;
         text-shadow: 2px 2px saddlebrown;
@@ -218,23 +242,27 @@ h4{
 
     }
 
-    .introduction{
+    .introduction {
         font-size: 1em;
         padding: 5%;
 
     }
-    p{
+
+    p {
         font-size: 1em;
     }
+
     #reseaux a img {
         height: 3em;
         width: 3em;
         margin: 0.5em;
     }
 }
-.image2{
-    padding : 10px;
+
+.image2 {
+    padding: 10px;
 }
-h5{
+
+h5 {
     display: none;
 }

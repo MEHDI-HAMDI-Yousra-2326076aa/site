@@ -1,17 +1,21 @@
-header{
+/* Dimensionne les éléments principaux de la page tels que les paragraphes ou les liens */
+header {
     width: 100%;
 }
+
 p {
     font-size: 2em;
 }
 
-a{
+a {
     color: darkslategrey;
 }
-a:hover{
+
+a:hover {
     color: black;
 }
-ul{
+
+ul {
 
     margin: 0 3em;
     border-radius: 8px;
@@ -24,12 +28,13 @@ h1 {
     color: whitesmoke;
     text-shadow: 4px 4px darkslategrey;
 }
+
 body {
     color: white;
     text-align: center;
     height: fit-content;
 }
-/* css page*/
+
 #tuto main {
     display: flex;
     flex-direction: row;
@@ -39,17 +44,19 @@ body {
     margin: 1em 0;
     animation: tuto 2s ease-in;
 }
-@keyframes tuto{
-    0%{
+
+@keyframes tuto {
+    0% {
         opacity: 0;
         transform: translateY(-10%);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
-#actual{
+
+#actual {
     color: white;
     font-weight: bold;
     text-decoration: none;
@@ -57,25 +64,29 @@ body {
     border-radius: 15px;
 
 }
-#apprendre{
-   display: flex;
-   justify-content:space-around;
+
+#apprendre {
+    display: flex;
+    justify-content: space-around;
     flex-direction: column;
 }
-#titre h2{
+
+#titre h2 {
     display: flex;
     justify-content: flex-start;
     margin-left: auto;
     margin-right: auto;
     font-size: 2em;
 }
-#titre{
+
+#titre {
     margin: 0 20px;
     padding: 2em;
-   }
-#petit-texte{
+}
+
+#petit-texte {
     font-weight: bold;
-    color:darkslategray ;
+    color: darkslategray;
     width: 20em;
     border-radius: 15px;
     background-color: white;
@@ -88,10 +99,12 @@ body {
     text-align: center;
     font-size: 1.5em;
 }
-#t2 h3{
+
+#t2 h3 {
     font-size: 2em;
 }
-h4{
+
+h4 {
     font-size: 1.5em;
     justify-self: center;
     text-align: center;
@@ -100,34 +113,40 @@ h4{
     font-weight: bold;
     padding: 1em;
 }
-.liste li a::after{
-  bottom: -5px;
-  display: flex;
-  right: 0;
-  content: "";
-  width: 0;
-  height: 2px;
-  border-radius: 6px;
-  background-color: darkslategray;
-  transition: 0.5s;
+
+.liste li a::after {
+    bottom: -5px;
+    display: flex;
+    right: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: darkslategray;
+    transition: 0.5s;
 }
-.liste li a:hover::after{
+
+.liste li a:hover::after {
     width: 100%;
 }
-.liste{
-    box-shadow: 1em 2em 5em black; 
+
+.liste {
+    box-shadow: 1em 2em 5em black;
 }
-.liste li a{
+
+.liste li a {
     font-weight: bold;
     padding: 0.3em;
     border-radius: 1em;
     color: white;
 }
-.liste li{
-   padding: 0.5em;
-   margin : 0 1em;
+
+.liste li {
+    padding: 0.5em;
+    margin: 0 1em;
 }
-.liste{
+
+.liste {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -135,83 +154,100 @@ h4{
     color: white;
 }
 
-.tuto video{
-    width:560px;
+.tuto video {
+    width: 560px;
     height: 315px;
 }
-.explications p{
+
+.explications p {
     color: white;
- box-shadow: 1em 2em 5em black; 
- background-color: transparent;
- backdrop-filter: blur(10px);
- border: 1px solid white;
- display: flex;
- flex-direction: column;
- padding: 3em; 
- margin: 2em;  
+    box-shadow: 1em 2em 5em black;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    margin: 2em;
 }
-.images{
- width: auto;
- height: 15em;
- margin: auto;
- border-radius: 10%;
- display: flex;
- align-items: center;
- justify-content: center;
-}
-.special{
+
+.images {
+    width: auto;
+    height: 15em;
+    margin: auto;
     border-radius: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.images:hover{
+
+.special {
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images:hover {
     transition: 1s;
     transform: scale(1.5);
 }
-@media (max-width: 1500px){
-    h1{
+
+/* Responsive avec les media queries */
+
+@media (max-width: 1500px) {
+    h1 {
         font-size: 5em;
     }
-    .explications{
+
+    .explications {
         font-size: 0.7em;
     }
-    .images:hover{
+
+    .images:hover {
         transform: scale(1.2);
     }
-    h2{
+
+    h2 {
         margin-bottom: 1em;
     }
 }
+
 @media (max-width: 670px) {
 
     .tuto video {
         width: 70%;
         height: 70%;
     }
+
     h2 {
         font-size: 1em;
     }
-    .explications{
+
+    .explications {
         font-size: 0.5em;
     }
-    .tuto iframe{
-        width:320px;
+
+    .tuto iframe {
+        width: 320px;
         height: 200px;
     }
 }
-    @media (max-width: 450px){
-        h1{
-            font-size: 2em;
-        }
-        .tuto iframe{
-            width:200px;
-            height: 100px;
-        }
 
+@media (max-width: 450px) {
+    h1 {
+        font-size: 2em;
     }
-    @media (max-width: 230px){
-        h1{
-            font-size: 1em;
-        }
+
+    .tuto iframe {
+        width: 200px;
+        height: 100px;
     }
+
+}
+
+@media (max-width: 230px) {
+    h1 {
+        font-size: 1em;
+    }
+}

@@ -8,7 +8,7 @@
 }
 
 
-html{
+html {
     background-image: url("https://static9.depositphotos.com/1177973/1132/i/450/depositphotos_11320421-stock-photo-chess-board-with-chess-pieces.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,10 +16,12 @@ html{
     background-position: center;
     height: 100%;
 }
-header{
+
+header {
     width: 100%;
 }
-#changementTheme{
+
+#changementTheme {
     background-color: darkslategrey;
     position: fixed;
     top: 10px;
@@ -33,10 +35,11 @@ header{
     z-index: 5001;
 }
 
-.logo1{
+.logo1 {
     display: none;
 }
-.logo{
+
+.logo {
     animation: rotation 5s infinite linear;
     width: 3em;
     border-radius: 15px;
@@ -46,6 +49,7 @@ header{
     left: 10px;
     z-index: 5000;
 }
+
 @keyframes rotation {
     from {
         transform: rotate(0deg);
@@ -54,6 +58,7 @@ header{
         transform: rotate(359deg);
     }
 }
+
 .menu {
 
     top: 0;
@@ -69,6 +74,7 @@ header{
     margin: 0;
     background: saddlebrown;
 }
+
 .menu li a {
     font-size: 0.7em;
     color: white;
@@ -77,6 +83,7 @@ header{
     padding: 0.3em;
     transition: 300ms ease-in-out;
 }
+
 .menu li p {
     color: white;
     font-weight: bold;
@@ -100,6 +107,7 @@ header{
     background: sandybrown;
     border-radius: 15px;
 }
+
 .menuHamburger {
     display: none;
 }
@@ -108,21 +116,23 @@ header{
 .menuDeroulantActif {
     display: none;
 }
+
 @media only screen and (max-width: 1200px) {
 
     .menu {
         display: none;
     }
-    .menuDeroulantActif{
+
+    .menuDeroulantActif {
 
         margin-top: -100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height:  10em;
+        height: 10em;
         width: 100%;
 
-        background: rgba(37,17, 2, 0.9);
+        background: rgba(37, 17, 2, 0.9);
         position: fixed;
         top: 0;
         z-index: 5000;
@@ -140,6 +150,7 @@ header{
         display: flex;
         justify-content: center;
     }
+
     .menuDeroulantActif li a:hover {
 
         color: black;
@@ -147,21 +158,22 @@ header{
         transform: scale(1.1);
 
     }
-    .mobile-menu{
+
+    .mobile-menu {
         margin-top: 0;
         margin-left: 0;
     }
-    #changementTheme{
+
+    #changementTheme {
 
         right: 63px;
     }
 
 
-
     .menuHamburger {
         display: block;
         position: fixed;
-        top:1px;
+        top: 1px;
         right: 0;
         height: 60px;
         width: 60px;
@@ -170,7 +182,8 @@ header{
         transition: .3s transform ease-in-out;
 
     }
-    .menuHamburger:hover{
+
+    .menuHamburger:hover {
         transform: scale(1.05);
     }
 }

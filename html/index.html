@@ -1,95 +1,130 @@
-
 <!DOCTYPE html>
 <html lang="fr">
+<!-- titre de la page et les differents liens css, js et icones -->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Présentation du jeu des Echecs et de son histoire !">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Présentation du jeu des Echecs et de son histoire !" name="description">
     <title> Chess </title>
-    <link class="classique" rel="stylesheet" href="../css/style.css">
-    <link class="traditionnel" rel="stylesheet" href="../css/style-traditionnel.css" disabled>
-    <link class="classique" rel="stylesheet" href="../css/index.css">
-    <link class="traditionnel" rel="stylesheet" href="../css/index-traditionnel.css" disabled>
-    <link rel="shortcut icon" href="../assets/favicone/favicon-96x96.png">
-    <script src="../js/main.js" defer></script>
-
+    <link class="classique" href="../css/style.css" rel="stylesheet">
+    <link class="traditionnel" disabled href="../css/style-traditionnel.css" rel="stylesheet">
+    <link class="classique" href="../css/index.css" rel="stylesheet">
+    <link class="traditionnel" disabled href="../css/index-traditionnel.css" rel="stylesheet">
+    <link href="../assets/favicone/favicon-96x96.png" rel="shortcut icon">
+    <script defer src="../js/main.js"></script>
 
 </head>
 
 <body>
 <header>
-    <button  aria-label="Changer de thème" id="changementTheme"></button>
+    <!--     le header avec le menu hamburger et le menu deroulant-->
+    <button aria-label="Changer de thème" id="changementTheme"></button>
     <h1> Les Échecs </h1>
     <nav>
         <ul class="menu">
-            <li><a href="#" class="actual">Presentation</a></li>
+            <li><a class="actual" href="#">Presentation</a></li>
             <li><a href="Apprendre.html"> Apprendre</a></li>
             <li><a href="Joueurs.html"> Joueurs</a></li>
             <li><a href="contacts.html">Contacts</a></li>
         </ul>
     </nav>
-    <img class=menuHamburger src="https://cdn-icons-png.flaticon.com/512/54/54630.png" alt="menu déroulant" >
+    <img alt="menu déroulant" class=menuHamburger src="https://cdn-icons-png.flaticon.com/512/54/54630.png">
     <ul class="menuDeroulantActif">
-        <li ><a href="#" class="actual">Presentation</a></li>
-        <li ><a href="Apprendre.html" > Apprendre</a></li>
-        <li ><a href="Joueurs.html">Joueurs</a></li>
-        <li ><a href="contacts.html">Contacts</a></li>
+        <li><a class="actual" href="#">Presentation</a></li>
+        <li><a href="Apprendre.html"> Apprendre</a></li>
+        <li><a href="Joueurs.html">Joueurs</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
     </ul>
-    <img class="logo logo1" src="https://www.chess.com/bundles/web/images/brand/chesscom_pawn.5dfdea51.png" alt="logo de chess.com">
-    <img class="logo logo2" src="https://cdn-icons-png.flaticon.com/512/5462/5462881.png" alt="favicon du code">
+    <img alt="logo de chess.com" class="logo logo1"
+         src="https://www.chess.com/bundles/web/images/brand/chesscom_pawn.5dfdea51.png">
+    <img alt="favicon du code" class="logo logo2" src="https://cdn-icons-png.flaticon.com/512/5462/5462881.png">
 
 </header>
 <main>
-    <!-- je presente mon magnifique chess board -->
 
+    <!-- la section avec les images et les differents paragraphes présentant le jeu -->
 
-    <section id="description" >
+    <section id="description">
 
-<h2>Introduction</h2>
+        <h2>Introduction</h2>
         <p class="introduction">
             Bienvenue sur ce site dédié au jeu des <strong> Échecs</strong></p>
 
-        <img class=" image1" alt="Echiquier avec des pièces vertes et blanches dessus" src="https://les-echiquiers-du-roi.fr/cdn/shop/products/jeu-echecs-vert-feutre_1200x.jpg?v=1619635795" height="400">
-        <img class="image2" alt="Echiquier avec des pièces en bois dessus" src="https://static.vecteezy.com/ti/photos-gratuite/p2/4548190-echiquier-en-bois-avec-pieces-en-bois-marron-gratuit-photo.jpg" height="400" >
-
+        <img alt="Echiquier avec des pièces vertes et blanches dessus" class=" image1"
+             height="400"
+             src="https://les-echiquiers-du-roi.fr/cdn/shop/products/jeu-echecs-vert-feutre_1200x.jpg?v=1619635795">
+        <img alt="Echiquier avec des pièces en bois dessus" class="image2"
+             height="400"
+             src="https://static.vecteezy.com/ti/photos-gratuite/p2/4548190-echiquier-en-bois-avec-pieces-en-bois-marron-gratuit-photo.jpg">
 
 
     </section>
 
     <section id="contenu">
         <h3 class="titrepartie">Histoire</h3>
-    <p>
-        Le jeu a été introduit dans le Sud de l'Europe à partir du Xe siècle par les Arabes, mais on ignore où il fut inventé exactement.<br> <br> <br> Les règles actuelles se fixent à partir de la fin du XVe siècle. Le jeu d'échecs est l'un des jeux de réflexion les plus populaires au monde.
+        <p>
+            Le jeu a été introduit dans le Sud de l'Europe à partir du Xe siècle par les Arabes, mais on ignore où il
+            fut inventé exactement.<br> <br> <br> Les règles actuelles se fixent à partir de la fin du XVe siècle. Le
+            jeu d'échecs est l'un des jeux de réflexion les plus populaires au monde.
 
-        Il est pratiqué par des millions de gens sous de multiples formes : en famille, entre amis, dans des lieux publics, en club, en tournoi, par correspondance, contre des machines spécialisées, entre ordinateurs, entre programmes, sur Internet, aux niveaux amateur et professionnel.<br> <br> Depuis son introduction en Europe, le jeu d'échecs jouit d'un prestige et d'une aura particulière qui du « jeu des rois » l'a fait devenir peu à peu « le roi des jeux » ou encore « le noble jeu », en référence à sa dimension tactique et à sa notoriété mondiale.<br> Il a très largement inspiré la culture, en particulier la peinture, la littérature et le cinéma.
-    </p>
+            Il est pratiqué par des millions de gens sous de multiples formes : en famille, entre amis, dans des lieux
+            publics, en club, en tournoi, par correspondance, contre des machines spécialisées, entre ordinateurs, entre
+            programmes, sur Internet, aux niveaux amateur et professionnel.<br> <br> Depuis son introduction en Europe,
+            le jeu d'échecs jouit d'un prestige et d'une aura particulière qui du « jeu des rois » l'a fait devenir peu
+            à peu « le roi des jeux » ou encore « le noble jeu », en référence à sa dimension tactique et à sa notoriété
+            mondiale.<br> Il a très largement inspiré la culture, en particulier la peinture, la littérature et le
+            cinéma.
+        </p>
     </section>
 
-<section id="Competition">
-    <h4 class="titrepartie">Compétition</h4>
-    <img id="photoCompétition" src="https://www.leparisien.fr/resizer/Q-sZA-s2w5ksia_e6c1Yntv_qbY=/932x582/cloudfront-eu-central-1.images.arcpublishing.com/leparisien/LUGIXOVTUVAENP3L4VHRVAAWD4.jpg" alt="Compétition d'Echecs">
-    <p> La compétition aux échecs existe depuis les origines. On en trouve trace à la cour d'Hâroun ar-Rachîd au VIIIe siècle.<br> <br> Le premier tournoi de l'ère moderne a lieu à Londres lors de l'Exposition universelle de 1851. La compétition est régie par la Fédération internationale des échecs (FIDE). Parallèlement, l'Association of Chess Professionals défend les intérêts des joueurs professionnels. Le premier champion du monde d'échecs est Wilhelm Steinitz en 1886 ; le champion en titre est le Chinois Ding Liren depuis 2023. <br>
+    <section id="Competition">
+        <h4 class="titrepartie">Compétition</h4>
+        <img alt="Compétition d'Echecs"
+             id="photoCompétition"
+             src="https://www.leparisien.fr/resizer/Q-sZA-s2w5ksia_e6c1Yntv_qbY=/932x582/cloudfront-eu-central-1.images.arcpublishing.com/leparisien/LUGIXOVTUVAENP3L4VHRVAAWD4.jpg">
+        <p> La compétition aux échecs existe depuis les origines. On en trouve trace à la cour d'Hâroun ar-Rachîd au
+            VIIIe siècle.<br> <br> Le premier tournoi de l'ère moderne a lieu à Londres lors de l'Exposition universelle
+            de 1851. La compétition est régie par la Fédération internationale des échecs (FIDE). Parallèlement,
+            l'Association of Chess Professionals défend les intérêts des joueurs professionnels. Le premier champion du
+            monde d'échecs est Wilhelm Steinitz en 1886 ; le champion en titre est le Chinois Ding Liren depuis 2023.
+            <br>
 
-        Une théorie du jeu, développée depuis son invention et de façon intensive par les joueurs de premier plan de l'époque moderne, est transmise au travers d'une littérature échiquéenne abondante.<br> La théorie des jeux (mathématique) décrit quant à elle les échecs comme un jeu de stratégie combinatoire abstrait de réflexion pure, fini, sans cycle et à information complète et parfaite.<br><br> L'absence de cycle est garantie par les règles de nulle : répétition de position, règle des cinquante coups et impossibilité de mater.
-    </p>
-</section>
+            Une théorie du jeu, développée depuis son invention et de façon intensive par les joueurs de premier plan de
+            l'époque moderne, est transmise au travers d'une littérature échiquéenne abondante.<br> La théorie des jeux
+            (mathématique) décrit quant à elle les échecs comme un jeu de stratégie combinatoire abstrait de réflexion
+            pure, fini, sans cycle et à information complète et parfaite.<br><br> L'absence de cycle est garantie par
+            les règles de nulle : répétition de position, règle des cinquante coups et impossibilité de mater.
+        </p>
+    </section>
     <section>
-    <h4 class="titrepartie">Les règles du jeu</h4>
-            <p>
-                Une partie d'échecs commence dans la position initiale, les blancs jouent le premier coup puis les joueurs jouent à tour de rôle en déplaçant à chaque fois une de leurs pièces (deux dans le cas d'un roque)G 7.<br> <br> Chaque pièce se déplace de façon spécifique, il n'est pas possible de jouer sur une case occupée par une pièce de son propre camp. Lorsqu'une pièce adverse se trouve sur la case d'arrivée de la pièce jouée, elle est capturée et retirée de l'échiquier.<br> Gagner du « matériel » (des pièces) est un moyen pour gagner la partie, mais ne suffit pas toujours pour y parvenir.<br> <br>
+        <h4 class="titrepartie">Les règles du jeu</h4>
+        <p>
+            Une partie d'échecs commence dans la position initiale, les blancs jouent le premier coup puis les joueurs
+            jouent à tour de rôle en déplaçant à chaque fois une de leurs pièces (deux dans le cas d'un roque)G 7.<br>
+            <br> Chaque pièce se déplace de façon spécifique, il n'est pas possible de jouer sur une case occupée par
+            une pièce de son propre camp. Lorsqu'une pièce adverse se trouve sur la case d'arrivée de la pièce jouée,
+            elle est capturée et retirée de l'échiquier.<br> Gagner du « matériel » (des pièces) est un moyen pour
+            gagner la partie, mais ne suffit pas toujours pour y parvenir.<br> <br>
 
-                Il existe des règles spéciales liées au déplacement de certaines pièces : le roque, qui permet le déplacement simultané du roi et de l'une des tours ; la prise en passant, qui permet une capture particulière des pions ; et la promotion des pions, qui permet de les transformer en une pièce maîtresse de son choix (sauf le roi) lorsqu'ils atteignent la dernière rangée de l'échiquier. <br>
+            Il existe des règles spéciales liées au déplacement de certaines pièces : le roque, qui permet le
+            déplacement simultané du roi et de l'une des tours ; la prise en passant, qui permet une capture
+            particulière des pions ; et la promotion des pions, qui permet de les transformer en une pièce maîtresse de
+            son choix (sauf le roi) lorsqu'ils atteignent la dernière rangée de l'échiquier. <br>
 
-                Le but du jeu est donc d'infliger un échec et mat à son adversaire.<br> Le terme « échec et mat » vient de « šāh māta » (en persan, soit « aš-šāh māta » الشّاهُ ماتَ en arabe) (« le roi est mort »), pour indiquer la défaite du roi. <br><br> Le mot « šāh » (« roi » en persan) est à l'origine du mot échec et du nom des échecs dans un grand nombre de langues.
+            Le but du jeu est donc d'infliger un échec et mat à son adversaire.<br> Le terme « échec et mat » vient de «
+            šāh māta » (en persan, soit « aš-šāh māta » الشّاهُ ماتَ en arabe) (« le roi est mort »), pour indiquer la
+            défaite du roi. <br><br> Le mot « šāh » (« roi » en persan) est à l'origine du mot échec et du nom des
+            échecs dans un grand nombre de langues.
 
-            </p>
-        </section>
+        </p>
+    </section>
 
 
 </main>
 
 <hr>
 <footer>
+    <!--     le footer avec les differents liens vers les reseaux sociaux, les liens ne sont pas réelements reliés vers no pages parce que Mehdi est timide-->
     <section id="reseaux">
         <h5>Nos Réseaux</h5>
         <a href="https://www.facebook.com/">
