@@ -179,7 +179,7 @@ video {
     }
 
     .introduction {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 }
 
@@ -191,7 +191,7 @@ video {
 
 @media screen and (max-width: 480px) {
     h1 {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     #tableauJoueurs {
@@ -209,7 +209,7 @@ video {
     }
 
     .introduction {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 }
 
