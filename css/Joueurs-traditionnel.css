@@ -182,6 +182,12 @@ video {
     }
 }
 
+@media screen and (max-width: 630px) {
+    #tableauJoueurs {
+        font-size: 1em;
+    }
+}
+
 @media screen and (max-width: 480px) {
     h1 {
         font-size: 1.5em;
@@ -206,8 +212,4 @@ video {
     }
 }
 
-@media screen and (max-width: 630px) {
-    #tableauJoueurs {
-        font-size: 1.5em;
-    }
-}
+
