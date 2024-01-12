@@ -50,8 +50,6 @@ p:not(.introduction) {
     font-size: 1em;
 }
 #tableauJoueurs {
-
-    display: flex;
     font-size: 2em;
     color: white;
     border: solid darkslategrey 2px;
@@ -183,6 +181,11 @@ video{
     }
     .introduction{
         font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 630px){
+    #tableauJoueurs{
+        font-size: 1.5em;
     }
 }
 
