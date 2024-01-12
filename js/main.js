@@ -65,8 +65,8 @@ if (menuHamburger) {
 //fonction qui permet de changer le thème du site vers le thème traditionnel ou classique
 
 document.getElementById('changementTheme').addEventListener('click', function () {
-    var classique = document.querySelectorAll('.classique');
-    var traditionnel = document.querySelectorAll('.traditionnel');
+    let classique = document.querySelectorAll('.classique');
+    let traditionnel = document.querySelectorAll('.traditionnel');
     classique.forEach((element, index) => {
 
         if (element.disabled) {
