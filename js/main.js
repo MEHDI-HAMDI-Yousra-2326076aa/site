@@ -1,29 +1,15 @@
-<!-- fonction qui s'occupe de la validation du formulaire de contact -->
 
-if (document.getElementById('envoyer')) document.getElementById('envoyer').addEventListener('click', function (e) {
-    e.preventDefault();
+if(document.getElementById('envoyer')){
+    document.getElementById('envoyer').addEventListener('click', function () {
+        // Récupération des valeurs des champs
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('sujet').value;
+        const message = document.getElementById('Contact').value;
 
-    const email = document.getElementById('email');
-    const subject = document.getElementById('subject');
-    const mess = document.getElementById('Contact');
-
-    const bodymessage = `Email : ${email.value}<br> Subject: ${subject.value}<br> Message: ${mess.value}`;
-
-    email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "chessweb7@gmail.com",
-        Password: "8E95DF2BFE4225A64EC31EBB47EC0777DCB9",
-        Port: 2525,
-        To: 'chessweb7@gmail.com',
-        From: document.getElementById("email").value,
-        Subject: subject.value,
-        Body: bodymessage
-    }).then(message => {
-        alert(message);
-        myalert();
+        // Création du lien mailto avec les valeurs pré-remplies
+        window.location.href = `mailto:chessweb7@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Email: ${email}\nMessage: ${message}`)}`;
     });
-});
-
+}
 // fonction qui envoie un retour à l'utilisateur lorsque le message est envoyé
 
 function myalert() {
