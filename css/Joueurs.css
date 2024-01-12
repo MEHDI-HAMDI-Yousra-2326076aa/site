@@ -49,8 +49,6 @@ p:not(.introduction) {
     font-size: 1em;
 }
 #tableauJoueurs {
-
-    display: flex;
     font-size: 2em;
     color: white;
     border: solid darkslategrey 2px;
@@ -85,14 +83,12 @@ table{
     border-radius: 500px;
     order: 1;
 }
-#Mehdi, #Magnus, #Wesley {
+#Mehdi, #Magnus, #Wesley{
     color: white;
     padding: 50px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
 }
 #Magnus{
     order: 2;
@@ -173,18 +169,22 @@ video{
         font-size: 1em;
     }
 
-    #Magnus, #Mehdi, #Wesley{
+    #Magnus p, #Mehdi p, #Wesley p {
+        font-size: 0.5em;
+    }
 
-        p{
-            font-size: 0.5em;
-        }
-
+    #Magnus, #Mehdi, #Wesley {
         width: 100%;
         padding-right: 0;
         padding-left: 0;
     }
     .introduction{
         font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 630px){
+    #tableauJoueurs{
+        font-size: 1.5em;
     }
 }
 

@@ -48,7 +48,6 @@ section p:not(.introduction){
 }
 #tableauJoueurs {
 
-    display: flex;
     font-size: 2em;
     border: solid saddlebrown 2px;
     width: 60%;
@@ -170,17 +169,21 @@ video{
         font-size: 1em;
     }
 
-    #Magnus, #Mehdi, #Wesley{
+    #Magnus p, #Mehdi p, #Wesley p {
+        font-size: 0.5em;
+    }
 
-        p{
-            font-size: 0.5em;
-        }
-
+    #Magnus, #Mehdi, #Wesley {
         width: 100%;
         padding-right: 0;
         padding-left: 0;
     }
     .introduction{
         font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 630px){
+    #tableauJoueurs{
+        font-size: 1.5em;
     }
 }
