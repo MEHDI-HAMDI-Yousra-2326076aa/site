@@ -1,5 +1,4 @@
-if (document.getElementById('envoyer')) document.getElementById('envoyer').addEventListener('click', function (e) {
-    e.preventDefault();
+
 
     const email = document.getElementById('email');
     const subject = document.getElementById('subject');
@@ -53,7 +52,6 @@ function fermer() {
     btnFermer.style.display = 'none';
 }
 
-if (document.getElementById('btnfermer')) document.getElementById('btnfermer').addEventListener('click', fermer);
 
 
 const menuHamburger = document.querySelector(".menuHamburger");
