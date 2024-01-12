@@ -57,7 +57,7 @@ ul{
     font-size: 3em;
     color: white;
     font-weight: 900;
-    text-shadow: black 0px 0px 50px;
+    text-shadow: black 0 0 50px;
 }
 #competition{
     padding: 25%;
@@ -197,6 +197,11 @@ h4{
 }
 @media screen and (max-width: 670px){
 
+    section p:not(.introduction) {
+        
+        width: 80%;
+    }
+
     h1 {
         font-weight: 900;
         font-size: 3em;
@@ -222,8 +227,8 @@ h4{
         font-size: 1em;
     }
     #reseaux a img {
-        height: 2em;
-        width: 2em;
+        height: 3em;
+        width: 3em;
         margin: 0.5em;
     }
 }

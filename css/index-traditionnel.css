@@ -161,7 +161,7 @@ h4{
 
     }
     p{
-        font-size: 1;
+        font-size: 1em;
     }
 }
 @media screen and (max-width: 1000px){
@@ -196,6 +196,11 @@ h4{
     }
 }
 @media screen and (max-width: 670px){
+
+    section p:not(.introduction) {
+
+        width: 80%;
+    }
 
     h1 {
         font-weight: 900;
